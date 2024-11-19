@@ -57,6 +57,9 @@ class CountryController extends Controller
     public function destroy(Country $country)
     {
         $country->delete();
-        return redirect()->route('countries.index')->with('success', 'Country deleted successfully');
+        return response()->json([
+            'success' => true,
+            'message' => 'Country deleted successfully.'
+        ]);
     }
 }

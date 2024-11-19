@@ -2,63 +2,68 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\StateStoreRequest;
+use App\Interfaces\StateInterface;
+use App\Http\Requests\StateUpdateRequest;
+use App\Models\Country;
+use App\Models\State;
+
+
 
 class StateController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+
+    protected $stateRepository;
+
+    public function __construct(StateInterface $stateRepository)
+    {
+        $this->stateRepository = $stateRepository;
+    }
     public function index()
     {
-        //
+        $states = State::with('country')->get();
+        return view('admin.states.index', compact('states'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
-        //
+        $countries = Country::where('status', 'active')->get();
+        return view('admin.states.create', compact('countries'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
+    public function store(StateStoreRequest $request)
     {
-        //
+
+        $data = $request->all();
+        return $this->stateRepository->store($data);
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
+    public function show(State $state)
     {
         //
+
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
+    public function edit(State $state)
     {
-        //
+
+        $countries = Country::where('status', 'active')->get();
+        return view('admin.states.edit', compact('countries', 'state'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
+    public function update(StateUpdateRequest $request, $state)
     {
-        //
+        $result = $this->stateRepository->update($request->all(), $state);
+        return $result;
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
+    public function destroy(State $state)
     {
-        //
+        $state->delete();
+        return response()->json([
+            'success' => true,
+            'message' => 'State deleted successfully.'
+        ]);
     }
 }

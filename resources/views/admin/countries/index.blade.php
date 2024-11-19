@@ -23,7 +23,7 @@
                             </thead>
                             <tbody>
                                 @forelse($countries as $index => $country)
-                                <tr>
+                                <tr id="countryRow_{{ $country->id }}">
                                     <td>{{ $index + 1 }}</td>
                                     <td>{{ $country->name }}</td>
                                     <td class="{{ $country->status == 'active' ? 'text-success' : 'text-danger' }}">
@@ -33,13 +33,12 @@
                                         <!-- DropDown -->
                                         <div class="d-flex">
                                             <a class="btn btn-sm btn-primary" href="{{ route('countries.edit', $country->id) }}">Edit</a>
-                                            <form action="{{ route('countries.destroy', $country->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this country?');" class="ms-2">
+                                            <form id="deleteCountryForm_{{ $country->id }}" class="d-inline ms-2">
                                                 @csrf
                                                 @method('DELETE')
-                                                <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                                                <button type="button" class="btn btn-sm btn-danger deleteCountryBtn" data-country-id="{{ $country->id }}">Delete</button>
                                             </form>
                                         </div>
-
                                     </td>
                                 </tr>
                                 @empty
@@ -56,5 +55,59 @@
             </div>
         </div>
     </div>
+
+    @push('scripts')
+    <script>
+        $(document).ready(function() {
+            $('.deleteCountryBtn').click(function(e) {
+                e.preventDefault();
+
+                var countryId = $(this).data('country-id');
+
+                // Confirm before sending the request
+                Swal.fire({
+                    title: 'Are you sure?',
+                    text: "You won't be able to revert this!",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Yes, delete it!'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        // Send the AJAX request to delete the country
+                        $.ajax({
+                            url: "{{ url('countries') }}/" + countryId,
+                            method: 'DELETE',
+                            data: {
+                                _token: '{{ csrf_token() }}',
+                            },
+                            success: function(response) {
+                                if (response.success) {
+                                    // Show success message
+                                    Swal.fire(
+                                        'Deleted!',
+                                        response.message,
+                                        'success'
+                                    ).then(() => {
+                                        // remove the deleted row from the table
+                                        $('#countryRow_' + countryId).remove();
+                                    });
+                                }
+                            },
+                            error: function(xhr, status, error) {
+                                Swal.fire(
+                                    'Error!',
+                                    'There was an issue deleting the country.',
+                                    'error'
+                                );
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+    @endpush
 
 </x-admin.layouts.master>
