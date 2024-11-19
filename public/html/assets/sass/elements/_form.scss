@@ -1,0 +1,483 @@
+// Dashboard form start
+
+
+
+.single_flex_input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-grow: 1;
+    @include responsive(xxs) {
+        display: block;
+        flex-wrap: wrap;
+    }
+}
+
+.label_title {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 10px;
+    color: var(--heading-color);
+    &__postition {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: var(--heading-color);
+        background: var(--white-bg);
+        margin-bottom: -11px;
+        position: relative;
+        display: table;
+        padding: 0 10px;
+        z-index: 9990;
+    }
+}
+
+.form_control,
+.form__control,
+.form--control,
+.form-control {
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        -moz-appearance: textfield;
+    }
+    -moz-appearance: textfield;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 15px;
+    border: 1px solid var(--border-color);
+    background-color: unset;
+    outline: none;
+    color: var(--paragraph-color);
+    @include transition(300ms);
+    @include box-shadow(0, 0, 10px, rgba(var(--white-rgb), .05));
+    &:focus {
+        border-color: rgba(var(--main-color-one-rgb), .3);
+        @include box-shadow(0, 0, 10px, rgba(var(--main-color-one-rgb), .1));
+        background: var(--white-bg);
+        color: var(--paragraph-color);
+    }
+    @include responsive(xxs) {
+        font-size: 15px;
+    }
+    @include responsive(vxxs) {
+        font-size: 14px;
+    }
+}
+
+// Form Input with icon
+.include_icon {
+    position: relative;
+    .form--control,
+    .form-control {
+        padding-left: 45px;
+    }
+    .icon {
+        position: absolute;
+        bottom: 12px;
+        left: 15px;
+        line-height: 1;
+        font-size: 16px;
+        .material-symbols-outlined,
+        .material-symbols-sharp,
+        .material-symbols-rounded {
+            font-size: 20px;
+        }
+    }
+}
+
+.custom_form {
+    .single_flex_input {
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+        .single_input,
+        .form-group {
+            margin-top: 0 !important;
+            .select2_activation {
+                width: 100%;
+            }
+        }
+    }
+    .single_input,
+    .form-group {
+        width: 100%;
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+        .label-title {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+            display: block;
+            margin-bottom: 10px;
+            color: var(--heading-color);
+            @include responsive(xxs) {
+                font-size: 15px;
+            }
+            @include responsive(vxxs) {
+                font-size: 14px;
+            }
+        }
+        .include_icon {
+            position: relative;
+            .form--control,
+            .form-control {
+                padding-left: 45px;
+            }
+            .icon {
+                position: absolute;
+                bottom: 12px;
+                left: 15px;
+                line-height: 1;
+                font-size: 16px;
+                .material-symbols-outlined,
+                .material-symbols-sharp,
+                .material-symbols-rounded {
+                    font-size: 20px;
+                }
+            }
+        }
+        .input-icon {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+        }
+        .iti {
+            width: 100%;
+        }
+        .form--control,
+        .form-control {
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+                -moz-appearance: textfield;
+            }
+            -moz-appearance: textfield;
+            width: 100%;
+            height: 48px;
+            line-height: 48px;
+            padding: 0 15px;
+            border: 1px solid var(--border-color);
+            background-color: unset;
+            outline: none;
+            color: var(--paragraph-color);
+            @include transition(300ms);
+            @include box-shadow(0, 0, 10px, rgba(var(--white-rgb), .05));
+            &:focus {
+                border-color: rgba(var(--main-color-one-rgb), .3);
+                @include box-shadow(0, 0, 10px, rgba(var(--main-color-one-rgb), .05));
+                background: var(--white-bg);
+                color: var(--paragraph-color);
+            }
+            @include responsive(xxs) {
+                font-size: 15px;
+            }
+            @include responsive(vxxs) {
+                font-size: 14px;
+            }
+            &.input-padding-left {
+                padding-left: 45px;
+            }
+            &#phone {
+                width: 100%;
+                padding-left: 50px;
+            }
+        }
+        .form-message,
+        textarea {
+            width: 100%;
+            line-height: 24px;
+            height: unset;
+            padding: 5px 15px;
+            border: 1px solid var(--border-color);
+            background-color: unset;
+            outline: none;
+            color: var(--paragraph-color);
+            @include transition(300ms);
+            @include box-shadow(0, 0, 10px, rgba(var(--white-rgb), .1));
+            &:focus {
+                border-color: rgba(var(--main-color-one-rgb), .3);
+                @include box-shadow(0, 0, 10px, rgba(var(--main-color-one-rgb), .1));
+            }
+            &.textarea-height {
+                height: 100px;
+            }
+        }
+        &-icon {
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                height: 55px;
+                width: 2px;
+                background-color: var(--search-bg);
+                bottom: 0;
+                left: 40px;
+            }
+            .form--control,
+            .form-control {
+                padding-left: 50px;
+                position: relative;
+            }
+        }
+        &-select {
+            width: 100%;
+            border: 1px solid var(--border-color);
+        }
+    }
+    textarea {
+        height: unset !important;
+    }
+    .submit-btn {
+        margin-top: 25px;
+    }
+}
+
+.form-message,
+textarea {
+    width: 100%;
+    line-height: 24px;
+    height: unset !important;
+    padding: 5px 15px;
+    border: 1px solid var(--border-color);
+    background-color: unset;
+    outline: none;
+    color: var(--paragraph-color);
+    @include transition(300ms);
+    @include box-shadow(0, 0, 10px, rgba(var(--white-rgb), .1));
+    &:focus {
+        border-color: rgba(var(--main-color-one-rgb), .3);
+        @include box-shadow(0, 0, 10px, rgba(var(--main-color-one-rgb), .1));
+    }
+    &.textarea-height {
+        height: 100px;
+    }
+}
+.submit-btn {
+    border: 2px solid var(--main-color-one);
+    background-color: var(--main-color-one);
+    color: var(--white-text);
+    padding: 12px 20px;
+    @include transition(300ms);
+    &:hover {
+        background-color: rgba(var(--main-color-one-rgb), .9);
+    }
+}
+
+/* Toggle Password hide Show */
+
+.single_input {
+    position: relative;
+    // input ~ .toggle_password {
+    //     .single_input {
+    //         padding-right: 50px;
+    //     }
+    // }
+}
+
+.toggle_password {
+    position: absolute;
+    bottom: 13px;
+    right: 20px;
+    cursor: pointer;
+}
+
+// Form css start
+.form__input {    
+    &__single {
+        &:not(:first-child) {
+            margin-top: 24px;
+        }
+        &__label {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: var(--paragraph-color);
+            margin-bottom: 7px;
+        }
+        .form__control {
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+                -moz-appearance: textfield;
+            }
+            -moz-appearance: textfield;
+            width: 100%;
+            height: 45px;
+            line-height: 28px;
+            padding: 5px 15px;
+            border: 1px solid var(--border-color);
+            background-color: unset;
+            outline: none;
+            color: var(--paragraph-color);
+            @include transition(300ms);
+            @include box-shadow(0, 0, 10px, rgba(var(--white-rgb), .05));
+            &:focus {
+                border-color: rgba(var(--main-color-one-rgb), .3);
+                @include box-shadow(0, 0, 10px, rgba(var(--main-color-one-rgb), .1));
+                background: var(--white-bg);
+                color: var(--paragraph-color);
+            }
+            @include responsive(xxs) {
+                font-size: 15px;
+            }
+            @include responsive(vxxs) {
+                font-size: 14px;
+            }
+        }
+        textarea {
+            height: unset;
+        }
+        &__item {
+            position: relative;
+            .form__control {
+                padding: 5px 15px 5px 45px;
+            }
+            .input__icon {
+                position: absolute;
+                left: 15px;
+                top: 11px;
+                font-size: 18px;
+                line-height: 1;
+                color: var(--body-color);
+                i {
+                    font-size: 22px;
+                    line-height: 1;
+                    color: var(--body-color);
+                }
+            }
+        }
+    }
+    &__flex {
+        display: flex;
+        align-items: baseline;
+        gap: 24px;
+        flex-wrap: wrap;
+        .form__input__single {
+            width: calc(100% / 2 - 12px);
+            margin: 0;
+            @include responsive(xxs) {
+                width: calc(100% / 1 - 0px);
+            }
+        }
+        &.input__three {
+            .form__input__single {
+                width: calc(100% / 3 - 16px);
+                @include responsive(xxs) {
+                    width: calc(100% / 2 - 12px);
+                }
+                @include responsive(xxs) {
+                    width: calc(100% / 1 - 0px);
+                }
+            }
+        }
+        &.input__four {
+            .form__input__single {
+                width: calc(100% / 4 - 18px);
+                @include responsive(lg) {
+                    width: calc(100% / 3 - 16px);
+                }
+                @include responsive(allPhone) {
+                    width: calc(100% / 2 - 12px);
+                }
+                @include responsive(xxs) {
+                    width: calc(100% / 1 - 0px);
+                }
+            }
+        }
+        &.input__five {
+            .form__input__single {
+                width: calc(100% / 5 - 19.2px);
+                @include responsive(xl) {
+                    width: calc(100% / 4 - 18px);
+                }
+                @include responsive(lg) {
+                    width: calc(100% / 3 - 16px);
+                }
+                @include responsive(allPhone) {
+                    width: calc(100% / 2 - 12px);
+                }
+                @include responsive(xxs) {
+                    width: calc(100% / 1 - 0px);
+                }
+            }
+        }
+        &.input__six {
+            .form__input__single {
+                width: calc(100% / 5 - 19.2px);
+                @include responsive(xxl) {
+                    width: calc(100% / 5 - 18px);
+                }
+                @include responsive(xl) {
+                    width: calc(100% / 4 - 18px);
+                }
+                @include responsive(lg) {
+                    width: calc(100% / 3 - 16px);
+                }
+                @include responsive(allPhone) {
+                    width: calc(100% / 2 - 12px);
+                }
+                @include responsive(xxs) {
+                    width: calc(100% / 1 - 0px);
+                }
+            }
+        }
+    }
+}
+// Dashboard form end
+// Validation form start
+
+.is-invalid {
+    .form__input__single__label {
+        span {
+            display: inline-block;
+            color: var(--danger);
+        }
+    }
+    &.form__input__single {
+        .form__control {
+            &:focus {
+                border-color: rgba(var(--danger-rgb), .3);
+                @include box-shadow(0, 0, 10px, rgba(var(--danger-rgb), .1));
+                background: var(--white-bg);
+                color: var(--paragraph-color);
+            }
+        }
+    }
+    .validation__text {
+        display: block;
+        color: var(--danger);
+    }
+}
+
+.is-valid {
+    .form__input__single__label  {
+        span {
+            display: inline-block;
+            color: var(--success);
+        }
+    }
+    &.form__input__single {
+        .form__control {
+            &:focus {
+                border-color: rgba(var(--success-rgb), .3);
+                @include box-shadow(0, 0, 10px, rgba(var(--success-rgb), .1));
+                background: var(--white-bg);
+                color: var(--paragraph-color);
+            }
+        }
+    }
+    .validation__text {
+        display: block;
+        color: var(--success);
+    }
+}
+// Validation form end

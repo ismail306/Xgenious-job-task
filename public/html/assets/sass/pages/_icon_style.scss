@@ -1,0 +1,38 @@
+/* Icon Style Css */
+
+// Material Icon  
+.materialIcon_wrapper.style_one span {
+    font-size: 32px;
+    margin: 12px;
+    color: var(--heading-color);
+}
+
+// Line awesome 
+.lineAwesome_wrapper.style_one i {
+    font-size: 28px;
+    margin: 12px;
+    color: var(--heading-color);
+}
+
+// Font awesome 
+.fontAwesome_wrapper.style_one i {
+    font-size: 28px;
+    margin: 12px;
+    color: var(--body-color);
+}
+
+// Themify Icon
+.themifyIcon_wrapper.style_one span {
+    font-size: 28px;
+    color: var(--heading-color);
+    margin: 12px;
+    display: inline-block;
+}
+
+// icoFont Icon
+.icoFontIcon_wrapper.style_one i {
+    font-size: 28px;
+    color: var(--heading-color);
+    margin: 12px;
+    display: inline-block;
+}

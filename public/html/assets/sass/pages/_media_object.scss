@@ -1,0 +1,103 @@
+/* Media Object css */
+
+.media_object {
+    &.style_one {
+        .media_object {
+            &__flex {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                flex-wrap: wrap;
+            }
+            &__thumb {
+                flex-shrink: 0;
+            }
+            &__contents {
+                flex: 1;
+            }
+        }
+    }
+    &.style_two {
+        .media_object {
+            &__flex {
+                display: flex;
+                align-items: flex-start;
+                gap: 12px;
+                flex-wrap: wrap;
+            }
+            &__thumb {
+                flex-shrink: 0;
+            }
+            &__contents {
+                flex: 1;
+            }
+        }
+    }
+    &.style_three {
+        .media_object {
+            &__flex {
+                display: flex;
+                align-items: flex-end;
+                gap: 12px;
+                flex-wrap: wrap;
+            }
+            &__thumb {
+                flex-shrink: 0;
+            }
+            &__contents {
+                flex: 1;
+            }
+        }
+    }
+    &.style_four {
+        .media_object {
+            &__flex {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                flex-wrap: wrap;
+                flex-direction: row-reverse;
+            }
+            &__thumb {
+                flex-shrink: 0;
+            }
+            &__contents {
+                flex: 1;
+            }
+        }
+    }
+    &.style_five {
+        .media_object {
+            &__flex {
+                display: flex;
+                align-items: flex-start;
+                gap: 12px;
+                flex-wrap: wrap;
+                flex-direction: row-reverse;
+            }
+            &__thumb {
+                flex-shrink: 0;
+            }
+            &__contents {
+                flex: 1;
+            }
+        }
+    }
+    &.style_six {
+        .media_object {
+            &__flex {
+                display: flex;
+                align-items: flex-end;
+                gap: 12px;
+                flex-wrap: wrap;
+                flex-direction: row-reverse;
+            }
+            &__thumb {
+                flex-shrink: 0;
+            }
+            &__contents {
+                flex: 1;
+            }
+        }
+    }
+}

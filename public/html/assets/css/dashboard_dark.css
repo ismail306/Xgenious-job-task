@@ -1,0 +1,38 @@
+:root {
+
+    --dashboard-bg: #1F1D2B;
+    --section-bg-1: #202020;
+    --section-bg-2: #272931;
+    --section-bg-3: #212436;
+    --search-bg: #232534;
+    --border-color: #323232;
+    --border-color-2: #2e2e2e;
+    --switch-bg: #17181c;
+    --box-shadow: #2a2a2a;
+    --box-shadow-2: #31313159;
+
+    --body-color: #b8b8b8;
+    --heading-color: #e9e9e9;
+    --heading-color-two: #d1d1d1;
+    --paragraph-color: #c4c4c4;
+    --white: #252836;
+    --white-text: #fff;
+    --white-bg: #252836;
+    --white-2: #1c1e26;
+    --black: #ececec;
+    
+    --delete: #cc0000;
+}
+
+
+/* dashboard Left css start */
+
+.dashboard__bottom__list__item a {
+    color: var(--paragraph-color);
+}
+
+.dashboard__bottom__list__item.active > a {
+    color: var(--heading-color);
+}
+
+/* dashboard Left css end */

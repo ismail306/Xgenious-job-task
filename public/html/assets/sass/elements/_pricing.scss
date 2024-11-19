@@ -1,0 +1,110 @@
+/* Hive Pricing Css */
+
+.new_pricing__single {
+    border: 1px solid var(--new-border-color);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: var(--white-bg);
+    position: relative;
+    &__popular {
+        position: absolute;
+        top: -20px;
+        background: var(--success);
+        width: 100%;
+        left: 0;
+        color: var(--white-text);
+        text-align: center;
+        border-radius: 10px 10px 0 0;
+        padding: 3px;
+        font-size: 15px;
+        font-weight: 400;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .2s;
+    }
+    &.active_plan {
+        background-color: var(--heading-color);
+        border-radius: 0 0 10px 10px;
+        @include responsive(sm) {
+            margin-top: 20px;
+        }
+        .new_pricing__single {
+            &__popular {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+        .cmn-btn.btn-outline-border {
+            background-color: var(--new-main-color-one);
+            border-color: var(--new-main-color-one);
+            color: var(--white-text);
+            &:hover {
+                background-color: var(--new-main-color-two);
+                border-color: var(--new-main-color-two);
+            }
+        }
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 15px 10px;
+    }
+    &__package {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: var(--new-paragraph-color);
+    }
+    &__price {
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 1.2;
+        color: var(--new-main-color-two);
+    }
+    &__duration {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.2;
+        color: var(--new-heading-color);
+        display: block;
+        margin-top: 10px;
+    }
+    &__list {
+        li {
+            color: var(--light-color);
+            font-size: 16px;
+            line-height: 1.3;
+            position: relative;
+            padding-left: 25px;
+            &:not(:first-child) {
+                padding-top: 10px;
+            }
+            &:not(:last-child) {
+                padding-bottom: 10px;
+            }
+            &.list_show {
+                color: var(--heading-color);
+                &::before {
+                    color: var(--success);
+                    @include fontawesomeIcon('\f00c');
+                    position: absolute;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+.new_pricing__customize {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--new-main-color-two);
+    transition: all .3s;
+    &:hover {
+        color: var(--new-main-color-one);
+    }
+}

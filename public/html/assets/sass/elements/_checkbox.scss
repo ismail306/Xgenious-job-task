@@ -1,0 +1,149 @@
+/* Checkbox */
+
+.checkBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    cursor: pointer;
+    gap: 10px;
+    &__input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        height: 18px;
+        width: 18px;
+        cursor: pointer;
+        background: var(--white-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 0px;
+        margin-top: 3px;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        &::after {
+            content: "\f00c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            font-size: 10px;
+            color: var(--white-text);
+            visibility: hidden;
+            opacity: 0;
+            -webkit-transform: scale(1.6) rotate(90deg);
+            -ms-transform: scale(1.6) rotate(90deg);
+            transform: scale(1.6) rotate(90deg);
+            -webkit-transition: all .2s;
+            -o-transition: all .2s;
+            transition: all .2s;
+        }
+        &:checked {
+            background: var(--main-color-one);
+            border-color: var(--main-color-one);
+            background: var(--main-color-one);
+            &::after {
+                visibility: visible;
+                opacity: 1;
+                -webkit-transform: scale(1.2) rotate(0deg);
+                -ms-transform: scale(1.2) rotate(0deg);
+                transform: scale(1.2) rotate(0deg);
+            }
+        }
+    }
+    &__label {
+        cursor: pointer;
+        text-align: left;
+        line-height: 24px;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--heading-color);
+        @include responsive(xs) {
+            font-size: 15px;
+        }
+    }
+}
+
+.dashboard_checkBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    cursor: pointer;
+    gap: 10px;
+    &__input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        height: 18px;
+        width: 18px;
+        cursor: pointer;
+        background: var(--white-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 0px;
+        margin-top: 3px;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        &::after {
+            content: "\f00c";
+            font-family: 'Line Awesome Free';
+            font-weight: 900;
+            font-size: 10px;
+            color: var(--white-text);
+            visibility: hidden;
+            opacity: 0;
+            -webkit-transform: scale(1.6) rotate(90deg);
+            -ms-transform: scale(1.6) rotate(90deg);
+            transform: scale(1.6) rotate(90deg);
+            -webkit-transition: all .2s;
+            -o-transition: all .2s;
+            transition: all .2s;
+        }
+        &:checked {
+            background: var(--main-color-one);
+            border-color: var(--main-color-one);
+            background: var(--main-color-one);
+            &::after {
+                visibility: visible;
+                opacity: 1;
+                -webkit-transform: scale(1.2) rotate(0deg);
+                -ms-transform: scale(1.2) rotate(0deg);
+                transform: scale(1.2) rotate(0deg);
+            }
+        }
+    }
+    &__label {
+        cursor: pointer;
+        text-align: left;
+        line-height: 26px;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--heading-color);
+        margin: 0;
+        transition: all .3s;
+        @include responsive(xs) {
+            font-size: 15px;
+        }
+    }
+}

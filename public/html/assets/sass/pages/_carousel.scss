@@ -1,0 +1,53 @@
+/* Carousel css */
+
+.carousel_wrapper {
+    &.style_one {
+        .carousel-item {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(var(--black-rgb), .5);
+                z-index: 0;
+            }
+            img {
+                border-radius: 10px;
+            }
+        }
+    }
+    &.style_two {
+        .carousel-item {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(var(--black-rgb), .5);
+                z-index: 0;
+            }
+            img {
+                border-radius: 10px;
+            }
+        }
+        .carousel-caption {
+            .carousel-caption-title {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 1.4;
+                color: var(--white);
+            }
+            .carousel-caption-para {
+                color: var(--white);
+                font-size: 15px;
+                font-weight: 300;
+            }
+        }
+    }
+}

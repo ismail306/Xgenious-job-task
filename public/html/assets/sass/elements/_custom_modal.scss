@@ -1,0 +1,255 @@
+/* Custom Modal css start */
+
+.custommodal {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+    z-index: 1056;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    &.is-open {
+        visibility: visible;
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    &__overlay {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        left: 0px;
+        top: 0;
+        background-color: rgba(var(--black-rgb), 0.5);
+        z-index: -1;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    &__inner {
+        max-width: 600px;
+        background-color: var(--white-bg);
+        border-radius: 10px;
+        overflow: hidden;
+        max-height: calc(100vh - 50px);
+        overflow-y: auto;
+        scrollbar-color: var(--main-color-one) var(--search-bg);
+        scrollbar-width: thin;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-shadow: 0 0 10px var(--box-shadow);
+        box-shadow: 0 0 10px var(--box-shadow);
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        &::-webkit-scrollbar {
+            width: 5px;
+            height: 8px;
+            background-color: var(--search-bg);
+            border-radius: 10px;
+            &-thumb {
+                background-color: var(--main-color-one);
+                border-radius: 10px;
+            }
+        }
+        &.modal__full {
+            min-width: calc(100vw - 30px);
+            height: 100vh;
+            @include responsive(sm) {
+                min-width: calc(100vw - 20px);
+            }
+        }
+        &.modal__xxl {
+            @include responsive(min-md) {
+                min-width: 750px;
+            }
+            @include responsive(min-lg) {
+                min-width: 980px;
+            }
+            @include responsive(min-xl) {
+                min-width: 1180px;
+            }
+            @include responsive(sm) {
+                min-width: calc(100vw - 20px);
+            }
+        }
+        &.modal__xl {
+            @include responsive(min-md) {
+                min-width: 750px;
+            }
+            @include responsive(min-lg) {
+                min-width: 990px;
+            }
+            @include responsive(sm) {
+                min-width: calc(100vw - 20px);
+            }
+        }
+        &.modal__lg {
+            @include responsive(min-md) {
+                min-width: 750px;
+            }
+            @include responsive(min-lg) {
+                min-width: 800px;
+            }
+            @include responsive(sm) {
+                min-width: calc(100vw - 20px);
+            }
+        }
+        &.modal__md {
+            @include responsive(min-md) {
+                min-width: 740px;
+            }
+            @include responsive(sm) {
+                min-width: calc(100vw - 20px);
+            }
+        }
+        &.modal__sm {
+            @include responsive(min-sm) {
+                min-width: 740px;
+            }
+            @include responsive(sm) {
+                min-width: calc(100vw - 20px);
+            }
+        }
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--border-color);
+        padding: 10px 20px;
+        &__left {
+            flex: 1;
+        }
+        &__title {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24px;
+            color: var(--heading-color);
+        }
+        &__close {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            height: 30px;
+            width: 30px;
+            background-color: var(--search-bg);
+            color: var(--delete);
+            font-size: 18px;
+            -webkit-box-shadow: 0 0 10px var(--box-shadow);
+            box-shadow: 0 0 10px var(--box-shadow);
+            cursor: pointer;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+            flex-shrink: 0;
+            border-radius: 5px;
+            font-size: 18px;
+            &:hover {
+                background-color: var(--delete);
+                color: var(--white-text);
+            }
+        }
+    }
+    &__body {
+        padding: 20px;
+        &__para {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: var(--paragraph-color);
+        }
+    }
+    &__footer {
+        padding: 10px 20px;
+        border-top: 1px solid var(--border-color);
+        &__flex {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+        &__btn {
+            color: var(--paragraph-color);
+            font-size: 16px;
+            font-weight: 400;
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            text-transform: capitalize;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+            line-height: 20px;
+            padding: 10px 15px;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+            -webkit-transition: all 0.3s ease-in;
+            transition: all 0.3s ease-in;
+            background-color: #0080ff;
+            background-color: var(--main-color-one);
+            color: var(--white-text);
+            position: relative;
+            z-index: 0;
+            overflow: hidden;
+            &::before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 0;
+                background-color: #0080ff;
+                background-color: var(--main-color-one);
+                left: 0;
+                top: 0;
+                visibility: hidden;
+                opacity: 0;
+                transition: all .4s;
+            }
+            &:hover {
+                background-color: unset;
+                color: var(--white-text);
+                &::before {
+                    width: 100%;
+                    visibility: visible;
+                    opacity: 1;
+                    z-index: -1;
+                }
+            }
+            &.modal_cancel {
+                background-color: var(--border-color);
+                color: var(--heading-color);
+                &:hover {
+                    color: var(--white-text);
+                    &::before {
+                        background-color: var(--delete);
+                    }
+                }
+            }
+        }
+    }
+}
+/* Custom Modal css end */

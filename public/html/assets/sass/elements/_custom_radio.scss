@@ -1,0 +1,178 @@
+/* Custom Radio Css */
+
+.custom_radio {
+    &__single {
+        @include transition(.3s);
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 24px;
+    }
+    &__inline {
+        display: flex;
+        align-items: flex-start;
+        gap: 24px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        &__two {
+            display: flex;
+            align-items: flex-start;
+            gap: 24px;
+            flex-wrap: wrap;
+            .custom_radio {
+                &__single {
+                    width: calc(100% / 2 - 12px);
+                    @include responsive(xxs) {
+                        width: calc(100% / 1 - 0px);
+                    }
+                }
+            }
+        }
+        &__three {
+            display: flex;
+            align-items: flex-start;
+            gap: 24px;
+            flex-wrap: wrap;
+            .custom_radio {
+                &__single {
+                    width: calc(100% / 3 - 16px);
+                    @include responsive(lg) {
+                        width: calc(100% / 2 - 12px);
+                    }
+                    @include responsive(md) {
+                        width: calc(100% / 2 - 12px);
+                    }
+                    @include responsive(xxs) {
+                        width: calc(100% / 1 - 0px);
+                    }
+                }
+            }
+        }
+        &__four {
+            display: flex;
+            align-items: flex-start;
+            gap: 24px;
+            flex-wrap: wrap;
+            .custom_radio {
+                &__single {
+                    width: calc(100% / 4 - 18px);
+                    @include responsive(xl) {
+                        width: calc(100% / 3 - 16px);
+                    }
+                    @include responsive(lg) {
+                        width: calc(100% / 3 - 16px);
+                    }
+                    @include responsive(md) {
+                        width: calc(100% / 2 - 12px);
+                    }
+                    @include responsive(xxs) {
+                        width: calc(100% / 1 - 0px);
+                    }
+                }
+            }
+        }
+        &__five {
+            display: flex;
+            align-items: flex-start;
+            gap: 24px;
+            flex-wrap: wrap;
+            .custom_radio {
+                &__single {
+                    width: calc(100% / 5 - 19.2px);
+                    @include responsive(xl) {
+                        width: calc(100% / 4 - 18px);
+                    }
+                    @include responsive(lg) {
+                        width: calc(100% / 4 - 18px);
+                    }
+                    @include responsive(md) {
+                        width: calc(100% / 3 - 16px);
+                    }
+                    @include responsive(sm) {
+                        width: calc(100% / 2 - 12px);
+                    }
+                    @include responsive(xxs) {
+                        width: calc(100% / 1 - 0px);
+                    }
+                }
+            }
+        }
+        &__six {
+            display: flex;
+            align-items: flex-start;
+            gap: 24px;
+            flex-wrap: wrap;
+            .custom_radio {
+                &__single {
+                    width: calc(100% / 6 - 20px);
+                    @include responsive(xl) {
+                        width: calc(100% / 4 - 18px);
+                    }
+                    @include responsive(lg) {
+                        width: calc(100% / 4 - 18px);
+                    }
+                    @include responsive(md) {
+                        width: calc(100% / 3 - 16px);
+                    }
+                    @include responsive(sm) {
+                        width: calc(100% / 2 - 12px);
+                    }
+                    @include responsive(xxs) {
+                        width: calc(100% / 1 - 0px);
+                    }
+                }
+            }
+        }
+    }
+    &__item {
+        &:not(:first-child) {
+            margin-top: 15px;
+        }
+    }
+    label {
+        font-size: 16px;
+        color: var(--new-paragraph-color);
+        @include transition(.3s);
+        padding: 0px 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    input[type="radio"] {
+        border: 2px solid var(--new-border-color);
+        background: $white;
+        clear: none;
+        cursor: pointer;
+        display: inline-block;
+        margin: 0;
+        outline: 0;
+        padding: 0!important;
+        text-align: center;
+        vertical-align: middle;
+        height: 24px;
+        width: 24px;
+        -webkit-appearance: none;
+        transition: all .3s linear;
+        border-radius: 50%;
+        position: relative;
+        margin-right: 3px;
+        &:checked {
+            border-color: var(--new-main-color-one);
+            &::before {
+                width: calc(100% - 9px);
+                height: calc(100% - 9px);
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                content: "";
+                border-radius: 50%;
+                background-color: var(--new-main-color-one);
+                margin: 0px 0px 0;
+                padding: 0px;
+                line-height: 1;
+            }
+        }
+    }
+}

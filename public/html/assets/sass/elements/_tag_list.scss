@@ -1,0 +1,32 @@
+/* Tag list */
+
+.new_tags {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0;
+    gap: 5px 15px;
+    flex-wrap: wrap;
+    &__item {
+        font-size: 14px;
+        line-height: 20px;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        &:hover {
+            color: var(--new-main-color-one);
+            i {
+                color: var(--new-main-color-one);
+            }
+        }
+        i {
+            font-size: 18px;
+            -webkit-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s;
+        }
+    }
+}

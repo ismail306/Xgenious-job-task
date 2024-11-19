@@ -1,0 +1,758 @@
+//== Template Main Color
+$white: #fff;
+$danger: #dc3545;
+$border: #726c94;
+$Prussian: #002359;
+$black: #000;
+$Pampas: #F3F0EB;
+$Violet: #9238A4;
+$SUGAR-MILK: #FFF9F3;
+$Gray: #F2F3F5;
+$Zircon: #F1F6FF;
+$steam-color: #ddd;
+$main-color-one: #1DBF73;
+$main-color-two: #47C8ED;
+$main-color-three: #FF6B2C;
+// Bootstrap color
+$primary: #084298;
+$secondary: #41464b;
+$danger: #dc3545;
+$success: #3CC13B;
+$info: #055160;
+$info-color: #0dcaf0;
+$warning: #F3BB1C;
+$error: #F44336;
+$blue: #11cdef;
+$green: #4BD865;
+//== social media colors
+$facebook: #3b5999;
+$twitter: #55acee;
+$pintarest: #c40014;
+$youtube: #ff1544;
+$dribbble: #ea4c89;
+$behance: #131418;
+$google-plus: #dd4b39;
+$linkedin: #326DE4;
+$instagram: linear-gradient(to top, #fea038, #ff8841, #ff704e, #ff575f, #ff3e71, #fa3080, #f12690, #e523a0, #d12dac, #bb37b7, #a140bf, #8347c5);
+
+//  transition
+$transition: all 0.3s ease-in;
+$transition-long: all 0.5s ease-in;
+
+
+
+/*--------------- ---- Responsive Device Variable --------------------------*/
+
+$xxxl: 'only screen and (min-width: 1600px) and (max-width: 1849px)';
+$xxl: 'only screen and (min-width: 1400px) and (max-width: 1599px)';
+$xl: 'only screen and (min-width: 1200px) and (max-width: 1399px)';
+$lg :'only screen and (min-width: 992px) and (max-width: 1199px)';
+$allPhone:'only screen and (max-width: 991px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$max-sm: 'only screen and (max-width: 767px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$xs:'(max-width: 575px)';
+$xxs:'(max-width: 480px)';
+$vxxs:'(max-width: 375px)';
+// $tab: '(max-width: 991px)';
+// Max - width , Min - width
+$xs-to-sm-max: '(max-width: 767px)';
+$xs-to-sm-min: '(min-width: 767px)';
+$xs-to-md-max: '(max-width: 991px)';
+$xs-to-md-min: '(min-width: 991px)';
+$xs-to-lg-max: '(max-width: 1199px)';
+$xs-to-lg-min: '(min-width: 1199px)';
+$xs-to-xl-max: '(max-width: 1399px)';
+$xs-to-xl-min: '(min-width: 1399px)';
+$xs-to-xxl-max: '(max-width: 1599px)';
+$xs-to-xxl-min: '(min-width: 1599px)';
+// Custom
+$large1:'only screen and (min-width: 1600px) and (max-width: 1799px)';
+$large2:'only screen and (min-width: 1800px) and (max-width: 1999px)';
+$large5:'only screen and (min-width: 2000px) and (max-width: 2399px)';
+$large6:'only screen and (min-width: 2400px) and (max-width: 2599px)';
+$large7:'only screen and (min-width: 2600px) and (max-width: 2799px)';
+$large8:'only screen and (min-width: 2800px) and (max-width: 2999px)';
+// Basic Color
+$white: #ffffff;
+$black: #000000;
+$gray:#f7f7fd;
+//social colors
+$fb: #50598e;
+$twitter: #6fa2d8;
+$google-plus: #c64e40;
+$linkedin: #0077B5;
+// Social media colors
+$facebook: #3b5999;
+$twitter: #55acee;
+$dribbble: #ea4c89;
+$behance: #131418;
+$google-plus: #dd4b39;
+$linkedin: #0077b5;
+$instagram: #e4405f;
+$youtube: #FF0000;
+$pinterest: #c8232c;
+$steam-color: #ddd;
+// Bootstrap color
+$primary: #084298;
+$secondary: #41464b;
+$danger: #dc3545;
+$success: #3CC13B;
+$info: #055160;
+$info-color: #0dcaf0;
+$warning: #F3BB1C;
+$error: #F44336;
+$blue: #11cdef;
+$green: #4BD865;
+// General variables
+$theme-font-color: #2b2b2b;
+$theme-body-font-color: #242934;
+$theme-body-sub-title-color: rgba($theme-body-font-color, 0.7);
+// gradient colors
+$gradient-primary: linear-gradient(#1693f8, #0d67e9);
+//error input color start
+$light-body-bg-color:#fafdff;
+// dark layout variables
+$dark-body-background: #202938;
+$dark-card-background: #111727;
+$dark-card-inbox: #323846;
+$dark-small-font-color:#98a6ad;
+$dark-all-font-color: rgba(255, 255, 255, 0.7);
+$light-all-font-color: rgba(255, 255, 255, 0.2);
+$sidebar-submenu-font-color:rgba(255, 255, 255, 0.7);
+$dark-border-color: $dark-body-background;
+// $dark-card-border:#374558;
+$dark-card-border: rgba(var(--main-color-one), 0.2);
+$dark-editor-document: #2b2b2b;
+$bg-dark-color: #1f2533;
+$dark-datatable-odd: #1f232b;
+$dark-datatable-sorting: #1c212b;
+$dark-datatable-sorting-even: #22262f;
+$dark-even-hover-sorting: #191e27;
+$sidebar-height: calc(100vh - 0px);
+.height-100vh {
+    height: 100vh;
+    color: var(--main-color-one);
+}
+
+// Others
+$btn-color: #696CFF;
+$light-color: #f4f4f4;
+$light-gray: #e6edef;
+$light-semi-gray :#efefef;
+$secondary-color:#ba895d;
+$success-color: #3CC13B;
+$warning-color: #e2c636;
+$danger-color: #d22d3d;
+$info-color: #0dcaf0;
+$light-color: #f4f4f4;
+$light-gray: #e6edef;
+$light-semi-gray :#efefef;
+// $dark-light :$theme-font-color;
+$dark-gray: #898989;
+$dark-color: #2c323f;
+$gray-60 :#cccccc;
+$card-body-color: #f9f9fa;
+$transparent-color: transparent;
+$auth-bg-color:#fafafa;
+$light: #fdfeff;
+$semi-dark :#59667a;
+$light-text: #999;
+$light-background: #f5f7fb;
+$light-font: #717171;
+$light-semi-font: $semi-dark;
+$light-chartist-grid-color: #f6f9fd;
+$off-white: #ffebce;
+$dark-primary: #448aff;
+$pitch-color: #fe8a7d;
+$light-pitch: #fecf8b;
+$flower-pink: #fb6d9d;
+$dark-sky: #536dfe;
+$color-scarpa: #4c5667;
+$color-fiord: #455a64;
+$dark-blue: #00008B;
+$yellow:#f4c705;
+$btn-bhome-bg-c:#ff6060;
+$btn-search-bg-c:#ffd042;
+$btn-opacity-down-primary:#F7F0FF;
+// /*-- Margin Padding --*/
+@for $i from 6 through 200 {
+    /*-- Margin To-Bottom-Left-Right --*/
+    .mt-#{1 * $i} {
+        margin-top: 1px * $i;
+    }
+    .mb-#{1 * $i} {
+        margin-bottom: 1px * $i;
+    }
+    .ml-#{1 *$i} {
+        margin-left: 1px * $i;
+    }
+    .mr-#{1 * $i} {
+        margin-right: 1px * $i;
+    }
+    /*-- Padding To-Bottom-Left-Right --*/
+    .pt-#{1 * $i} {
+        padding-top: 1px * $i;
+    }
+    .pb-#{1 * $i} {
+        padding-bottom: 1px * $i;
+    }
+    .pl-#{1 * $i} {
+        padding-left: 1px * $i;
+    }
+    .pr-#{1 * $i} {
+        padding-right: 1px * $i;
+    }
+}
+
+
+/*-- Margin Padding  0 --*/
+
+@for $i from 0 through 0 {
+    /*-- Margin To-Bottom-Left-Right --*/
+    .mt-#{0 * $i} {
+        margin-top: 0px * $i !important;
+    }
+    .mb-#{0 * $i} {
+        margin-bottom: 0px * $i !important;
+    }
+    .ml-#{0 *$i} {
+        margin-left: 0px * $i !important;
+    }
+    .mr-#{0 * $i} {
+        margin-right: 0px * $i !important;
+    }
+    /*-- Padding To-Bottom-Left-Right --*/
+    .pt-#{0 * $i} {
+        padding-top: 0px * $i !important;
+    }
+    .pb-#{0 * $i} {
+        padding-bottom: 0px * $i !important;
+    }
+    .pl-#{0 * $i} {
+        padding-left: 0px * $i !important;
+    }
+    .pr-#{0 * $i} {
+        padding-right: 0px * $i !important;
+    }
+}
+
+
+/*-- Height-Weight --*/
+
+@for $i from 1 through 600 {
+    .height-#{1 * $i} {
+        height: 1px * $i !important;
+    }
+    .wight-#{1 * $i} {
+        width: 1px * $i;
+    }
+}
+
+
+/*-- Border Radius --*/
+
+$i:0;
+@while $i<=20 {
+    .radius-#{$i} {
+        border-radius: #{$i}px !important;
+    }
+    $i:$i+1;
+}
+
+
+/*-- Border width --*/
+
+@for $i from 0 through 10 {
+    .border-#{1 * $i} {
+        border-width: 1px * $i !important;
+    }
+}
+
+
+
+
+
+/*-- Border Style --*/
+
+$border-style-name: solid,
+dashed,
+none,
+unset,
+hidden,
+dotted,
+double,
+inherit;
+@each $i in $border-style-name {
+    .border-style-#{$i} {
+        border-style: $i !important;
+    }
+}
+
+// Position 
+$i:static,
+absolute,
+fixed,
+relative,
+initial,
+inherit;
+@each $val in $i {
+    .p-#{$val} {
+        position: $val;
+    }
+}
+
+// Overflow 
+$i:hidden,
+visible,
+auto;
+@each $val in $i {
+    .o-#{$val} {
+        overflow: $val;
+    }
+}
+
+// font size
+$i:1;
+@while $i <=50 {
+    .font-size-#{$i} {
+        font-size: #{$i}px !important;
+    }
+    $i:$i+1;
+}
+
+// Fonts weight
+$i: 100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900;
+@each $val in $i {
+    .font-weight-#{$val} {
+        font-weight: $val;
+    }
+}
+
+// Text color Class
+// $text-name: primary,
+// secondary,
+// success,
+// danger,
+// info,
+// light,
+// dark,
+// warning;
+// $text-color: var(--main-color-one),
+// $secondary-color,
+// $success-color,
+// $danger-color,
+// $info-color,
+// $light-gray,
+// $dark-color,
+// $warning-color;
+// @each $var in $text-name {
+//     $i: index($text-name, $var);
+//     .font-#{$var} {
+//         color: nth($text-color, $i) !important;
+//     }
+// }
+
+// Color Make
+// $label-name: theme,
+// primary,
+// secondary,
+// success,
+// danger,
+// info,
+// light,
+// dark,
+// warning;
+// $label-color: var(--main-color-one),
+// var(--main-color-one),
+// $secondary-color,
+// $success-color,
+// $danger-color,
+// $info-color,
+// $light-gray,
+// $dark-color,
+// $warning-color;
+// @each $var in $label-name {
+//     $i: index($label-name, $var);
+//     .label-#{$var} {
+//         background-color: nth($label-color, $i);
+//     }
+// }
+
+
+/*---------------------------------------------
+Background-color Makes CSS Class 
+@each <variable> in <expression> { ... } 
+-----------------------------------------------*/
+
+// $background-name: primary,
+// secondary,
+// success,
+// danger,
+// info,
+// light,
+// dark,
+// warning;
+// $background-color: var(--main-color-one),
+// $secondary-color,
+// $success-color,
+// $danger-color,
+// $info-color,
+// $light-gray,
+// $dark-color,
+// $warning-color;
+// @each $var in $background-name {
+//     $i: index($background-name, $var);
+//     .bg-#{$var} {
+//         background-color: nth($background-color, $i) !important;
+//     }
+// }
+
+// Text-color  
+// $text-name: primary,
+// secondary,
+// success,
+// danger,
+// info,
+// light,
+// dark,
+// warning,
+// google-plus,
+// twitter,
+// linkedin,
+// fb;
+// $label-color: var(--main-color-one),
+// $secondary-color,
+// $success-color,
+// $danger-color,
+// $info-color,
+// $light-gray,
+// $dark-color,
+// $warning-color,
+// $google-plus,
+// $twitter,
+// $linkedin,
+// $fb;
+// @each $var in $text-name {
+//     $i: index($text-name, $var);
+//     .txt-#{$var} {
+//         color: nth($label-color, $i) !important;
+//     }
+// }
+
+.txt-white {
+    color: $white !important;
+}
+
+// Btn-color
+// @each $btn-name,
+// $btn-color in (primary, var(--main-color-one)),
+// (secondary, $secondary-color),
+// (success, $success-color),
+// (danger, $danger-color),
+// (info, $info-color),
+// (light, $light-gray),
+// (dark, $dark-color),
+// (warning, $warning-color) {
+//     .btn-#{$btn-name} {
+//         background-color: $btn-color !important;
+//         border-color: $btn-color !important;
+//         &.disabled,
+//         &:disabled {
+//             background-color: $btn-color !important;
+//             border-color: $btn-color !important;
+//         }
+//         &:hover,
+//         &:focus,
+//         &:active,
+//         &.active {
+//             border-color: var(--main-color-one);
+//         }
+//     }
+// }
+
+// .btn-primary-light {
+//     background-color: rgba(var(--main-color-one), 0.1) !important;
+//     border: none !important;
+//     color: var(--main-color-one);
+//     transition: 0.5s;
+//     &:focus,
+//     &:hover {
+//         background-color: rgba(var(--main-color-one), 0.5) !important;
+//         color: var(--white);
+//         transition: 0.5s;
+//     }
+// }
+
+
+/*======= Button-color css ends  ======= */
+
+// @each $btn-name,
+// $btn-color in (primary, var(--main-color-one)),
+// (secondary, $secondary-color),
+// (success, $success-color),
+// (danger, $danger-color),
+// (info, $info-color),
+// (light, $light-gray),
+// (dark, $dark-color),
+// (warning, $warning-color) {
+//     .btn-outline-#{$btn-name}-2x {
+//         border-width: 2px;
+//         border-color: $btn-color;
+//         color: $btn-color;
+//         background-color: transparent;
+//         &:hover,
+//         &:focus,
+//         &:active,
+//         &.active {
+//             color: white;
+//             box-shadow: none;
+//             border-color: var(--main-color-one);
+//         }
+//     }
+// }
+
+// outline buttons//
+// @each $btn-name,
+// $btn-color in (primary, var(--main-color-one)),
+// (secondary, $secondary-color),
+// (success, $success-color),
+// (danger, $danger-color),
+// (info, $info-color),
+// (light, $light-gray),
+// (dark, $dark-color),
+// (warning, $warning-color) {
+//     .btn-outline-#{$btn-name} {
+//         border-color: $btn-color;
+//         color: $btn-color;
+//         background-color: transparent;
+//         &.disabled {
+//             color: $btn-color;
+//         }
+//         @if($btn-name=="light") {
+//             color: $theme-body-font-color;
+//         }
+//         &:hover,
+//         &:focus,
+//         &:active,
+//         &.active {
+//             color: white;
+//             border-color: var(--main-color-one);
+//         }
+//     }
+// }
+
+//* active button css end *//
+// @each $btn-name,
+// $btn-color in (primary, var(--main-color-one)),
+// (secondary, $secondary-color),
+// (success, $success-color),
+// (danger, $danger-color),
+// (info, $info-color),
+// (light, $light-gray),
+// (dark, $dark-color),
+// (warning, $warning-color) {
+//     .btn-outline-#{$btn-name}-2x:not([disabled]):not(.disabled).active {
+//         background-color: $btn-color;
+//         border-color: $btn-color;
+//         box-shadow: none !important;
+//         color: white;
+//         &:hover,
+//         &:focus,
+//         &:active,
+//         &.active {
+//             color: white;
+//             box-shadow: none !important;
+//             border-color: var(--main-color-one);
+//         }
+//     }
+// }
+
+// Table Border Bottom 
+// $border-name:primary,
+// secondary,
+// success,
+// danger,
+// info,
+// light,
+// dark,
+// warning;
+// $border-color:var(--main-color-one),
+// $secondary-color,
+// $success-color,
+// $danger-color,
+// $info-color,
+// $light-gray,
+// $dark-color,
+// $warning-color;
+// @each $var in $border-name {
+//     $i: index($border-name, $var);
+//     table thead .border-bottom-#{$var} th,
+//     table tbody .border-bottom-#{$var} th,
+//     table tbody .border-bottom-#{$var} td {
+//         border-bottom: 1px solid nth($border-color, $i);
+//     }
+// }
+
+// All Borders color
+// $b-name: primary,
+// secondary,
+// success,
+// danger,
+// info,
+// light,
+// dark,
+// warning;
+// $b-color: var(--main-color-one),
+// $secondary-color,
+// $success-color,
+// $danger-color,
+// $info-color,
+// $light-gray,
+// $dark-color,
+// $warning-color;
+// @each $var in $b-name {
+//     $i: index($b-name, $var);
+//     .b-#{$var} {
+//         border: 1px solid nth($b-color, $i) !important;
+//     }
+//     .b-t-#{$var} {
+//         border-top: 1px solid nth($b-color, $i) !important;
+//     }
+//     .b-b-#{$var} {
+//         border-bottom: 1px solid nth($b-color, $i) !important;
+//     }
+//     .b-l-#{$var} {
+//         border-left: 1px solid nth($b-color, $i) !important;
+//     }
+//     .b-r-#{$var} {
+//         border-right: 1px solid nth($b-color, $i) !important;
+//     }
+// }
+
+// Full Web site uses This Radius
+$radius-4: 4px;
+$radius-8: 8px;
+$radius-12: 12px;
+$radius-16: 16px;
+
+// Font Weight
+//   @for $i from 100 through 900 {
+//     .font-weight-#{1 + $i}{font-weight: 100 + $i - 1 !important;}
+//   }
+.font-weight-600 {
+    font-weight: 600;
+}
+
+// Background Gradient
+// Cart 2
+.bg-danger-gradient {
+    background: -webkit-gradient(linear, left top, right top, from(#fe7096), to(#ffbf96));
+    background: linear-gradient(90deg, #fe7096, #ffbf96);
+    @include transition(.6s);
+    // &:hover{
+    //     background: linear-gradient(90deg,#fe7096,#ffbf96);
+    // }
+}
+
+.bg-success-gradient {
+    background: -webkit-gradient(linear, left top, right top, from(#07cdae), to(#84d9d2));
+    background: linear-gradient(90deg, #07cdae, #84d9d2);
+}
+
+.bg-warning-gradient {
+    background: -webkit-gradient(linear, left top, right top, from(#d6b300), to(#f6e384));
+    background: linear-gradient(90deg, #d6b300, #f6e384);
+}
+
+.bg-beguni-gradient {
+    background: -webkit-gradient(linear, left top, right top, from(#9a55ff), to(#da8cff));
+    background: linear-gradient(90deg, #9a55ff, #da8cff);
+}
+
+.bg-blue-gradient {
+    background: -webkit-gradient(linear, left top, right top, from(#047edf), color-stop(99%, #90caf9));
+    background: linear-gradient(90deg, #047edf, #90caf9 99%);
+}
+
+.bg-gold-gradient {
+    background: -webkit-gradient(linear, left top, right top, from(#F0783C), color-stop(99%, #ffad84));
+    background: linear-gradient(90deg, #F0783C, #ffad84 99%);
+}
+
+.bg-gray-gradient {
+    background: -webkit-gradient(linear, left top, right top, from(#50433c), color-stop(99%, #8f7e75));
+    background: linear-gradient(90deg, #50433c, #8f7e75 99%);
+}
+
+.bg-black-gradient {
+    background: -webkit-gradient(linear, left top, right top, from(#222020), color-stop(99%, #666666));
+    background: linear-gradient(90deg, #222020, #666666 99%);
+}
+
+.bg-red-gradient {
+    background: -webkit-gradient(linear, left top, right top, from(#c90000), color-stop(99%, #7c4b4b));
+    background: linear-gradient(90deg, #c90000, #7c4b4b 99%);
+}
+
+.bg-green-gradient {
+    background: -webkit-gradient(linear, left top, right top, from(#73bb00), color-stop(99%, #90b456));
+    background: linear-gradient(90deg, #73bb00, #90b456 99%);
+}
+
+.bg-FrenchBlue-gradient {
+    background: -webkit-gradient(linear, left top, right top, from(#007db8), color-stop(99%, #a3c7e9));
+    background: linear-gradient(90deg, #007db8, #a3c7e9 99%);
+}
+
+.bg-frenchRose-gradient {
+    background: -webkit-gradient(linear, left top, right top, from(#e4277f), color-stop(99%, #e97caf));
+    background: linear-gradient(90deg, #e4277f, #e97caf 99%);
+}
+
+.bg-purpleMonster-gradient {
+    background: -webkit-gradient(linear, left top, right top, from(#3E1680), color-stop(99%, #5b4e70));
+    background: linear-gradient(90deg, #3E1680, #5b4e70 99%);
+}
+
+// Cart Three
+.bg-orange-gradient {
+    background: -webkit-gradient(linear, left top, right top, from(#1B5661), color-stop(99%, #989898));
+    background: linear-gradient(90deg, #1B5661, #989898 99%);
+}
+
+.bg-romance-gradient {
+    background: -webkit-gradient(linear, left top, right top, from(#BE3664), color-stop(99%, #222771));
+    background: linear-gradient(90deg, #BE3664, #222771 99%);
+}
+
+.bg-tea-gradient {
+    background: -webkit-gradient(linear, left top, right top, from(#6CAD7E), color-stop(99%, #175360));
+    background: linear-gradient(90deg, #6CAD7E, #175360 99%);
+}
+
+.bg-royal-gradient {
+    background: -webkit-gradient(linear, left top, right top, from(#AA3475), color-stop(99%, #CB7326));
+    background: linear-gradient(90deg, #AA3475, #CB7326 99%);
+}
+
+// Extend Color
+%overlay1 {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,545454+100&0.85+0,0.06+100 */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.85) 0%, rgba(84, 84, 84, 0.06) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.85) 0%, rgba(84, 84, 84, 0.06) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 0%, rgba(84, 84, 84, 0.06) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d9000000', endColorstr='#0f545454', GradientType=0);
+    /* IE6-9 */
+}

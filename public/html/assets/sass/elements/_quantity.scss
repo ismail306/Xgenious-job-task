@@ -1,0 +1,46 @@
+/* Quantity Css */
+
+.product__quantity {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
+    .substract,
+    .plus {
+        color: var(--light-color);
+        z-index: 9;
+        cursor: pointer;
+        position: absolute;
+        left: 5px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background: var(--white-bg);
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        color: var(--heading-color);
+    }
+    .plus {
+        left: auto;
+        right: 5px;
+    }
+    &__input {
+        width: 100px;
+        height: 35px;
+        border: 1px solid var(--border-color);
+        color: var(--heading-color);
+        background-color: transparent;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18px;
+        text-align: center;
+        -moz-appearance: textfield;
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+            -moz-appearance: textfield;
+        }
+    }
+}

@@ -1,0 +1,1864 @@
+/* Pagination css */
+.pagination_wrapper {
+    .pagination_list {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .pagination_item {
+        &.active {
+            .pagination_link {
+                background-color: var(--main-color-one);
+                color: var(--white);
+            }
+        }
+    }
+    .pagination_link {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--main-color-one);
+        border: 1px solid var(--main-color-one);
+        padding: 5px 15px;
+        border-radius: 5px;
+        @include transition(.3s);
+        &:hover,
+        &.active {
+            background-color: var(--main-color-one);
+            color: var(--white);
+        }
+    }
+    &.style_one {
+        &.color_primary {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--primary);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--primary);
+                border: 1px solid var(--primary);
+                &:hover,
+                &.active {
+                    background-color: var(--primary);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_secondary {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--secondary);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--secondary);
+                border: 1px solid var(--secondary);
+                &:hover,
+                &.active {
+                    background-color: var(--secondary);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_success {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--success);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--success);
+                border: 1px solid var(--success);
+                &:hover,
+                &.active {
+                    background-color: var(--success);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_danger {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--danger);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--danger);
+                border: 1px solid var(--danger);
+                &:hover,
+                &.active {
+                    background-color: var(--danger);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_light {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--light);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--danger);
+                border: 1px solid var(--light);
+                &:hover,
+                &.active {
+                    background-color: var(--light);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_dark {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--dark);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--dark);
+                border: 1px solid var(--dark);
+                &:hover,
+                &.active {
+                    background-color: var(--dark);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_info {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--info);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--info);
+                border: 1px solid var(--info);
+                &:hover,
+                &.active {
+                    background-color: var(--info);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_blue {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--blue);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--blue);
+                border: 1px solid var(--blue);
+                &:hover,
+                &.active {
+                    background-color: var(--blue);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_purple {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--purple);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--blue);
+                border: 1px solid var(--purple);
+                &:hover,
+                &.active {
+                    background-color: var(--purple);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_orange {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--orange);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--orange);
+                border: 1px solid var(--orange);
+                &:hover,
+                &.active {
+                    background-color: var(--orange);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_brown {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--brown);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--brown);
+                border: 1px solid var(--brown);
+                &:hover,
+                &.active {
+                    background-color: var(--brown);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_green {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--green);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--green);
+                border: 1px solid var(--green);
+                &:hover,
+                &.active {
+                    background-color: var(--green);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_sky {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--sky);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--sky);
+                border: 1px solid var(--sky);
+                &:hover,
+                &.active {
+                    background-color: var(--sky);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_pink {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--pink);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--pink);
+                border: 1px solid var(--pink);
+                &:hover,
+                &.active {
+                    background-color: var(--pink);
+                    color: var(--white);
+                }
+            }
+        }
+    }
+    &.style_two {
+        .pagination_item {
+            &.active {
+                .pagination_link {
+                    background-color: var(--main-color-one);
+                    color: var(--white);
+                }
+            }
+        }
+        .pagination_link {
+            color: var(--main-color-one);
+            border: 1px solid rgba(var(--main-color-one-rgb), .1);
+            background-color: rgba(var(--main-color-one-rgb), .1);
+            &:hover,
+            &.active {
+                background-color: var(--main-color-one);
+                color: var(--white);
+            }
+        }
+        &.color_pirmary {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--primary);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--primary);
+                border: 1px solid rgba(var(--primary-rgb), .1);
+                background-color: rgba(var(--primary-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--primary);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_secondary {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--secondary);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--secondary);
+                border: 1px solid rgba(var(--secondary-rgb), .1);
+                background-color: rgba(var(--secondary-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--secondary);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_success {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--success);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--success);
+                border: 1px solid rgba(var(--success-rgb), .1);
+                background-color: rgba(var(--success-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--success);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_orange {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--orange);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--orange);
+                border: 1px solid rgba(var(--orange-rgb), .1);
+                background-color: rgba(var(--orange-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--orange);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_danger {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--danger);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--danger);
+                border: 1px solid rgba(var(--danger-rgb), .1);
+                background-color: rgba(var(--danger-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--danger);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_light {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--light);
+                        color: var(--dark);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--dark);
+                border: 1px solid rgba(var(--light-rgb), .3);
+                background-color: rgba(var(--light-rgb), .3);
+                &:hover,
+                &.active {
+                    background-color: var(--light);
+                    color: var(--dark);
+                }
+            }
+        }
+        &.color_dark {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--dark);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--dark);
+                border: 1px solid rgba(var(--dark-rgb), .1);
+                background-color: rgba(var(--dark-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--dark);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_info {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--info);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--info);
+                border: 1px solid rgba(var(--info-rgb), .1);
+                background-color: rgba(var(--info-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--info);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_blue {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--blue);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--blue);
+                border: 1px solid rgba(var(--blue-rgb), .1);
+                background-color: rgba(var(--blue-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--blue);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_purple {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--purple);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--purple);
+                border: 1px solid rgba(var(--purple-rgb), .1);
+                background-color: rgba(var(--purple-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--purple);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_orange {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--orange);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--orange);
+                border: 1px solid rgba(var(--orange-rgb), .1);
+                background-color: rgba(var(--orange-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--orange);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_brown {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--brown);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--brown);
+                border: 1px solid rgba(var(--brown-rgb), .1);
+                background-color: rgba(var(--brown-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--brown);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_green {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--green);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--green);
+                border: 1px solid rgba(var(--green-rgb), .1);
+                background-color: rgba(var(--green-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--green);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_sky {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--sky);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--sky);
+                border: 1px solid rgba(var(--sky-rgb), .1);
+                background-color: rgba(var(--sky-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--sky);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_pink {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--pink);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--pink);
+                border: 1px solid rgba(var(--pink-rgb), .1);
+                background-color: rgba(var(--pink-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--pink);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_green {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--green);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_warning {
+                color: var(--warning);
+                border: 1px solid rgba(var(--warning-rgb), .1);
+                background-color: rgba(var(--warning-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--warning);
+                    color: var(--white);
+                }
+            }
+        }
+    }
+    &.style_three {
+        .pagination_item {
+            &.active {
+                .pagination_link {
+                    background-color: var(--main-color-one);
+                    color: var(--white);
+                    border-radius: 20px 0 20px 0;
+                }
+            }
+        }
+        .pagination_link {
+            color: var(--main-color-one);
+            border: 1px solid rgba(var(--main-color-one-rgb), .1);
+            background-color: rgba(var(--main-color-one-rgb), .1);
+            border-radius: 0 20px 0 20px;
+            padding: 5px 25px;
+            &:hover,
+            &.active {
+                background-color: var(--main-color-one);
+                color: var(--white);
+                border-radius: 20px 0 20px 0;
+            }
+        }
+        &.color_pirmary {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--primary);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--primary);
+                border: 1px solid rgba(var(--primary-rgb), .1);
+                background-color: rgba(var(--primary-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--primary);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_secondary {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--secondary);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--secondary);
+                border: 1px solid rgba(var(--secondary-rgb), .1);
+                background-color: rgba(var(--secondary-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--secondary);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_success {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--success);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--success);
+                border: 1px solid rgba(var(--success-rgb), .1);
+                background-color: rgba(var(--success-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--success);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_danger {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--danger);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--danger);
+                border: 1px solid rgba(var(--danger-rgb), .1);
+                background-color: rgba(var(--danger-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--danger);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_light {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--light);
+                        color: var(--dark);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--dark);
+                border: 1px solid rgba(var(--light-rgb), .1);
+                background-color: rgba(var(--light-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--light);
+                    color: var(--dark);
+                }
+            }
+        }
+        &.color_dark {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--dark);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--dark);
+                border: 1px solid rgba(var(--dark-rgb), .1);
+                background-color: rgba(var(--dark-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--dark);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_info {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--info);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--info);
+                border: 1px solid rgba(var(--info-rgb), .1);
+                background-color: rgba(var(--info-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--info);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_blue {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--blue);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--blue);
+                border: 1px solid rgba(var(--blue-rgb), .1);
+                background-color: rgba(var(--blue-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--blue);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_purple {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--purple);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--purple);
+                border: 1px solid rgba(var(--purple-rgb), .1);
+                background-color: rgba(var(--purple-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--purple);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_orange {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--orange);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--orange);
+                border: 1px solid rgba(var(--orange-rgb), .1);
+                background-color: rgba(var(--orange-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--orange);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_brown {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--brown);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--brown);
+                border: 1px solid rgba(var(--brown-rgb), .1);
+                background-color: rgba(var(--brown-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--brown);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_green {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--green);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--green);
+                border: 1px solid rgba(var(--green-rgb), .1);
+                background-color: rgba(var(--green-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--green);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_sky {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--sky);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--sky);
+                border: 1px solid rgba(var(--sky-rgb), .1);
+                background-color: rgba(var(--sky-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--sky);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_pink {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--pink);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--pink);
+                border: 1px solid rgba(var(--pink-rgb), .1);
+                background-color: rgba(var(--pink-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--pink);
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_warning {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--warning);
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--warning);
+                border: 1px solid rgba(var(--warning-rgb), .1);
+                background-color: rgba(var(--warning-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--warning);
+                    color: var(--white);
+                }
+            }
+        }
+    }
+    &.style_four {
+        background: var(--white);
+        display: inline-block;
+        box-shadow: 0 0 15px #ececec;
+        border-radius: 30px;
+        overflow: hidden;
+        .pagination_list {
+            gap: 12px 0;
+        }
+        .pagination-prev {
+            .pagination_link {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height: 100%;
+                    width: 1px;
+                    background-color: var(--main-color-one);
+                    top: 0;
+                    right: 0;
+                    transform: skewX(-15deg);
+                }
+            }
+        }
+        .pagination_item {
+            .pagination_link {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height: 100%;
+                    width: 1px;
+                    background-color: var(--main-color-one);
+                    top: 0;
+                    right: 0;
+                    transform: skewX(-15deg);
+                }
+            }
+            &.active {
+                .pagination_link {
+                    background-color: unset;
+                    border-color: unset;
+                    &::before {
+                        visibility: visible;
+                        opacity: 1;
+                        top: 0;
+                    }
+                }
+            }
+        }
+        .pagination_link {
+            border: unset;
+            border-radius: 0;
+            position: relative;
+            z-index: 1;
+            padding: 10px 20px;
+            &::before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background-color: var(--main-color-one);
+                top: -100%;
+                right: 0;
+                transform: skewX(-15deg);
+                visibility: hidden;
+                opacity: 0;
+                @include transition(.3s);
+                z-index: -1;
+            }
+            &:hover,
+            &.active {
+                background-color: unset;
+                border-color: unset;
+                &::before {
+                    visibility: visible;
+                    opacity: 1;
+                    top: 0;
+                }
+            }
+        }
+        &.color_pirmary {
+            .pagination-prev {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--primary);
+                    }
+                }
+            }
+            .pagination_item {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--primary);
+                    }
+                }
+                &.active {
+                    .pagination_link {
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--primary);
+                &::before {
+                    background-color: var(--primary);
+                }
+                &:hover,
+                &.active {
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_secondary {
+            .pagination-prev {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--secondary);
+                    }
+                }
+            }
+            .pagination_item {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--secondary);
+                    }
+                }
+                &.active {
+                    .pagination_link {
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--secondary);
+                &::before {
+                    background-color: var(--secondary);
+                }
+                &:hover,
+                &.active {
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_success {
+            .pagination-prev {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--success);
+                    }
+                }
+            }
+            .pagination_item {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--success);
+                    }
+                }
+                &.active {
+                    .pagination_link {
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--success);
+                &::before {
+                    background-color: var(--success);
+                }
+                &:hover,
+                &.active {
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_danger {
+            .pagination-prev {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--danger);
+                    }
+                }
+            }
+            .pagination_item {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--danger);
+                    }
+                }
+                &.active {
+                    .pagination_link {
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--danger);
+                &::before {
+                    background-color: var(--danger);
+                }
+                &:hover,
+                &.active {
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_light {
+            .pagination-prev {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--dark);
+                    }
+                }
+            }
+            .pagination_item {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--dark);
+                    }
+                }
+                &.active {
+                    .pagination_link {
+                        color: var(--dark);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--dark);
+                &::before {
+                    background-color: var(--light);
+                }
+                &:hover,
+                &.active {
+                    color: var(--dark);
+                }
+            }
+        }
+        &.color_dark {
+            .pagination-prev {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--dark);
+                    }
+                }
+            }
+            .pagination_item {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--dark);
+                    }
+                }
+                &.active {
+                    .pagination_link {
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--dark);
+                &::before {
+                    background-color: var(--dark);
+                }
+                &:hover,
+                &.active {
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_info {
+            .pagination-prev {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--info);
+                    }
+                }
+            }
+            .pagination_item {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--info);
+                    }
+                }
+                &.active {
+                    .pagination_link {
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--info);
+                &::before {
+                    background-color: var(--info);
+                }
+                &:hover,
+                &.active {
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_blue {
+            .pagination-prev {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--blue);
+                    }
+                }
+            }
+            .pagination_item {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--blue);
+                    }
+                }
+                &.active {
+                    .pagination_link {
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--blue);
+                &::before {
+                    background-color: var(--blue);
+                }
+                &:hover,
+                &.active {
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_purple {
+            .pagination-prev {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--purple);
+                    }
+                }
+            }
+            .pagination_item {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--purple);
+                    }
+                }
+                &.active {
+                    .pagination_link {
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--purple);
+                &::before {
+                    background-color: var(--purple);
+                }
+                &:hover,
+                &.active {
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_orange {
+            .pagination-prev {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--orange);
+                    }
+                }
+            }
+            .pagination_item {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--orange);
+                    }
+                }
+                &.active {
+                    .pagination_link {
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--orange);
+                &::before {
+                    background-color: var(--orange);
+                }
+                &:hover,
+                &.active {
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_brown {
+            .pagination-prev {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--brown);
+                    }
+                }
+            }
+            .pagination_item {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--brown);
+                    }
+                }
+                &.active {
+                    .pagination_link {
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--brown);
+                &::before {
+                    background-color: var(--brown);
+                }
+                &:hover,
+                &.active {
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_green {
+            .pagination-prev {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--green);
+                    }
+                }
+            }
+            .pagination_item {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--green);
+                    }
+                }
+                &.active {
+                    .pagination_link {
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--green);
+                &::before {
+                    background-color: var(--green);
+                }
+                &:hover,
+                &.active {
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_sky {
+            .pagination-prev {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--sky);
+                    }
+                }
+            }
+            .pagination_item {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--sky);
+                    }
+                }
+                &.active {
+                    .pagination_link {
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--sky);
+                &::before {
+                    background-color: var(--sky);
+                }
+                &:hover,
+                &.active {
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_pink {
+            .pagination-prev {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--pink);
+                    }
+                }
+            }
+            .pagination_item {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--pink);
+                    }
+                }
+                &.active {
+                    .pagination_link {
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--pink);
+                &::before {
+                    background-color: var(--pink);
+                }
+                &:hover,
+                &.active {
+                    color: var(--white);
+                }
+            }
+        }
+        &.color_warning {
+            .pagination-prev {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--warning);
+                    }
+                }
+            }
+            .pagination_item {
+                .pagination_link {
+                    &::after {
+                        background-color: var(--warning);
+                    }
+                }
+                &.active {
+                    .pagination_link {
+                        color: var(--white);
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--warning);
+                &::before {
+                    background-color: var(--warning);
+                }
+                &:hover,
+                &.active {
+                    color: var(--white);
+                }
+            }
+        }
+    }
+    &.style_five {
+        display: inline-block;
+        background-color: var(--white);
+        border-radius: 30px;
+        @include box-shadow(0, 0, 5px, #d1d1d1);
+        padding: 15px 20px;
+        .pagination-prev {
+            .pagination_link {
+                border-radius: 30px 0 0 30px;
+            }
+        }
+        .pagination-next {
+            .pagination_link {
+                border-radius: 0 30px 30px 0;
+            }
+        }
+        .pagination_item {
+            &.active {
+                .pagination_link {
+                    background-color: var(--main-color-one);
+                    color: var(--white);
+                    box-shadow: unset;
+                }
+            }
+        }
+        .pagination_link {
+            color: var(--main-color-one);
+            border: 1px solid rgba(var(--main-color-one-rgb), .1);
+            @include box-shadow(0, 0, 10px, #ccc);
+            &:hover,
+            &.active {
+                background-color: var(--main-color-one);
+                color: var(--white);
+                box-shadow: unset;
+            }
+        }
+        &.color_pirmary {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--primary);
+                        color: var(--white);
+                        box-shadow: unset;
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--primary);
+                border: 1px solid rgba(var(--primary-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--primary);
+                    color: var(--white);
+                    box-shadow: unset;
+                }
+            }
+        }
+        &.color_secondary {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--secondary);
+                        color: var(--white);
+                        box-shadow: unset;
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--secondary);
+                border: 1px solid rgba(var(--secondary-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--secondary);
+                    color: var(--white);
+                    box-shadow: unset;
+                }
+            }
+        }
+        &.color_success {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--success);
+                        color: var(--white);
+                        box-shadow: unset;
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--success);
+                border: 1px solid rgba(var(--success-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--success);
+                    color: var(--white);
+                    box-shadow: unset;
+                }
+            }
+        }
+        &.color_danger {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--danger);
+                        color: var(--white);
+                        box-shadow: unset;
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--danger);
+                border: 1px solid rgba(var(--danger-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--danger);
+                    color: var(--white);
+                    box-shadow: unset;
+                }
+            }
+        }
+        &.color_light {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--light);
+                        color: var(--dark);
+                        box-shadow: unset;
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--dark);
+                border: 1px solid rgba(var(--light-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--light);
+                    color: var(--dark);
+                    box-shadow: unset;
+                }
+            }
+        }
+        &.color_dark {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--dark);
+                        color: var(--white);
+                        box-shadow: unset;
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--dark);
+                border: 1px solid rgba(var(--dark-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--dark);
+                    color: var(--white);
+                    box-shadow: unset;
+                }
+            }
+        }
+        &.color_info {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--info);
+                        color: var(--white);
+                        box-shadow: unset;
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--info);
+                border: 1px solid rgba(var(--info-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--info);
+                    color: var(--white);
+                    box-shadow: unset;
+                }
+            }
+        }
+        &.color_blue {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--blue);
+                        color: var(--white);
+                        box-shadow: unset;
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--blue);
+                border: 1px solid rgba(var(--blue-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--blue);
+                    color: var(--white);
+                    box-shadow: unset;
+                }
+            }
+        }
+        &.color_purple {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--purple);
+                        color: var(--white);
+                        box-shadow: unset;
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--purple);
+                border: 1px solid rgba(var(--purple-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--purple);
+                    color: var(--white);
+                    box-shadow: unset;
+                }
+            }
+        }
+        &.color_orange {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--orange);
+                        color: var(--white);
+                        box-shadow: unset;
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--orange);
+                border: 1px solid rgba(var(--orange-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--orange);
+                    color: var(--white);
+                    box-shadow: unset;
+                }
+            }
+        }
+        &.color_brown {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--brown);
+                        color: var(--white);
+                        box-shadow: unset;
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--brown);
+                border: 1px solid rgba(var(--brown-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--brown);
+                    color: var(--white);
+                    box-shadow: unset;
+                }
+            }
+        }
+        &.color_green {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--green);
+                        color: var(--white);
+                        box-shadow: unset;
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--green);
+                border: 1px solid rgba(var(--green-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--green);
+                    color: var(--white);
+                    box-shadow: unset;
+                }
+            }
+        }
+        &.color_sky {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--sky);
+                        color: var(--white);
+                        box-shadow: unset;
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--sky);
+                border: 1px solid rgba(var(--sky-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--sky);
+                    color: var(--white);
+                    box-shadow: unset;
+                }
+            }
+        }
+        &.color_pink {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--pink);
+                        color: var(--white);
+                        box-shadow: unset;
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--pink);
+                border: 1px solid rgba(var(--pink-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--pink);
+                    color: var(--white);
+                    box-shadow: unset;
+                }
+            }
+        }
+        &.color_warning {
+            .pagination_item {
+                &.active {
+                    .pagination_link {
+                        background-color: var(--warning);
+                        color: var(--white);
+                        box-shadow: unset;
+                    }
+                }
+            }
+            .pagination_link {
+                color: var(--warning);
+                border: 1px solid rgba(var(--warning-rgb), .1);
+                &:hover,
+                &.active {
+                    background-color: var(--warning);
+                    color: var(--white);
+                    box-shadow: unset;
+                }
+            }
+        }
+    }
+}

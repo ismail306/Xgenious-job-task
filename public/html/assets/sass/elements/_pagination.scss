@@ -1,0 +1,171 @@
+/* Pagination */
+
+.dashboard__pagination {
+    &.text-center {
+        .pagination {
+            justify-content: center;
+        }
+    }
+    .pagination {
+        gap: 10px;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .page-item {
+        &.active,
+        &:hover {
+            .page-link {
+                background-color: var(--main-color-one);
+                color: var(--white-text);
+                border-color: var(--main-color-one);
+            }
+        }
+    }
+    .page-link {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        color: var(--heading-color-two);
+        background-color: var(--white-bg);
+        padding: 7px 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-color: var(--border-color);
+        &:focus {
+            box-shadow: none;
+        }
+        .material-symbols-outlined,
+        i {
+            font-size: 20px;
+        }
+    }
+}
+
+.service-pagination {
+    margin-top: 50px;
+    @include responsive(xxs) {
+        margin-top: 30px;
+    }
+}
+
+.pagination-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    &.color-two {
+        &::before,
+        &::after {
+            background: var(--new-main-color-two);
+        }
+        li {
+            &.active {
+                a {
+                    background: var(--new-main-color-two);
+                    color: $white;
+                }
+            }
+            a {
+                &:hover {
+                    background: var(--new-main-color-two);
+                    color: $white;
+                }
+            }
+        }
+    }
+    &.color-three {
+        &::before,
+        &::after {
+            background: var(--new-main-color-three);
+        }
+        li {
+            &.active {
+                a {
+                    background: var(--new-main-color-three);
+                    color: $white;
+                }
+            }
+            a {
+                &:hover {
+                    background: var(--new-main-color-three);
+                    color: $white;
+                }
+            }
+        }
+    }
+    &::before {
+        content: "Prev";
+    }
+    &::after {
+        content: "Next";
+    }
+    &::before,
+    &::after {
+        cursor: pointer;
+        background: var(--new-main-color-one);
+        color: $white;
+        font-size: 16px;
+        -webkit-box-shadow: 0 0 10px rgba($black, .05);
+        box-shadow: 0 0 10px rgba($black, .05);
+        padding: 10px 20px;
+        display: inline-block;
+        border-radius: 5px;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        @include responsive(allPhone) {
+            font-size: 15px;
+            padding: 7px 15px;
+        }
+        @include responsive(xxs) {
+            font-size: 14px;
+            padding: 5px 10px;
+        }
+    }
+    li {
+        margin: 5px 10px;
+        @include responsive(allPhone) {
+            margin: 5px 5px;
+        }
+        &.active {
+            a {
+                background: var(--new-main-color-one);
+                color: $white;
+            }
+        }
+        a {
+            background: $white;
+            color: var(--light-color);
+            font-size: 16px;
+            -webkit-box-shadow: 0 0 10px rgba($black, .05);
+            box-shadow: 0 0 10px rgba($black, .05);
+            padding: 10px 20px;
+            display: inline-block;
+            border-radius: 5px;
+            -webkit-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s;
+            &:hover {
+                background: var(--new-main-color-one);
+                color: $white;
+            }
+            @include responsive(allPhone) {
+                font-size: 15px;
+                padding: 7px 15px;
+            }
+            @include responsive(xxs) {
+                font-size: 14px;
+                padding: 5px 10px;
+            }
+        }
+    }
+}

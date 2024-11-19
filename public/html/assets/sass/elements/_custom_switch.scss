@@ -1,0 +1,62 @@
+/* Custom Switch Css */
+.custom_switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 28px;
+    @include responsive(vxxs) {
+        width: 40px;
+        height: 24px;
+    }
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        &:checked+.slider {
+            background-color: var(--main-color-one);
+            &:before {
+                -webkit-transform: translateX(20px);
+                -ms-transform: translateX(20px);
+                transform: translateX(20px);
+                @include responsive(vxxs) {
+                    transform: translateX(16px);
+                }
+            }
+        }
+        &:focus+.slider {
+            box-shadow: 0 0 1px var(--main-color-one);
+        }
+    }
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--switch-bg);
+        -webkit-transition: .4s;
+        transition: .4s;
+        &:before {
+            position: absolute;
+            content: "";
+            height: 22px;
+            width: 22px;
+            left: 3px;
+            bottom: 3px;
+            background-color: var(--white-bg);
+            -webkit-transition: .4s;
+            transition: .4s;
+            @include responsive(vxxs) {
+                height: 18px;
+                width: 18px;
+            }
+        }
+        &.round {
+            border-radius: 30px;
+            &::before {
+                border-radius: 50%;
+            }
+        }
+    }
+}

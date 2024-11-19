@@ -1,0 +1,481 @@
+// Tabs Button Style
+.tab-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 0px 24px;
+}
+
+.tab_wrapper {
+    nav {
+        margin-bottom: 24px;
+    }
+    &.style_one {
+        nav {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+            position: relative;
+            .nav-tabs {
+                border: 0;
+                gap: 10px;
+                .nav-item {
+                    display: block;
+                }
+                .nav-link {
+                    color: var(--heading-color-two);
+                    background: var(--section-bg-2);
+                    border-radius: var(--radius-three);
+                    font-size: 15px;
+                    font-weight: 400;
+                    border: 0;
+                    display: block;
+                    padding: 7px 20px;
+                    text-align: center;
+                    &:first-child{
+                        margin-left: 0px;
+                    }
+                    &.active {
+                        color:var(--white);
+                        background: var(--main-color-one);
+                    }
+                    &:hover {
+                        color:var(--white);
+                        background: var(--main-color-one);
+                    }
+                }
+            }
+        }
+    }
+    // Tab button style Two
+    &.style_two {
+        nav {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            position: relative;
+            border-bottom: 1px solid var(--border-color);
+            .nav-tabs {
+              border: 0;
+              gap: 10px;
+                .nav-item {
+                    display: block;
+                }
+                .nav-link {
+                    padding: 8px 2px;
+                    border-bottom: 2px solid transparent;
+                    color: var(--heading-color-two);
+                    font-size: 15px;
+                    font-weight: 400;
+                    border: 0;
+                    display: block;
+                    text-align: center;
+                    transition: all .2s;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    &.active {
+                        color: var(--main-color-one);
+                        border-bottom: 2px solid var(--main-color-one);
+                        background: none;
+                    }
+                    &:hover {
+                        border-bottom: 2px solid var(--main-color-one);
+                    }
+                }
+            }
+        }
+    }
+    // Tabs Button Style Three
+    &.style_three {
+        nav {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            padding-bottom: 0px;
+            position: relative;
+            .nav-tabs {
+                padding-bottom: 10px;
+                border: 0;
+                gap: 10px;
+                .nav-item {
+                    display: block;
+                }
+                .nav-link {
+                    padding: 7px 20px;
+                    border: 1px solid var(--border-color);
+                    color: var(--heading-color-two);
+                    font-size: 15px;
+                    font-weight: 400;
+                    display: block;
+                    text-align: center;
+                    border-radius: var(--radius-three);
+                    &:first-child{
+                        margin-left: 0px;
+                    }
+                    &.active {
+                        color: var(--white);
+                        background: var(--main-color-one);
+                        border: 1px solid transparent;
+                    }
+                    &:hover {
+                        color: var(--white);
+                        background: var(--main-color-one);
+                        border: 1px solid transparent;
+                    }
+                }
+            }
+        }
+    }
+    // Tabs Button Style Four
+    &.style_four {
+        nav {
+            display: flex;
+            justify-content: start;
+            margin-bottom: 20px;
+            padding-bottom: 0px;
+            .nav-tabs {
+            border: 1px solid var(--main-color-one);
+            border-radius:4px;
+            margin-bottom: 10px;
+                .nav-item {
+                    display: block;
+                }
+                .nav-link {
+                    color: var(--heading-color-two);
+                    background: var(--white);
+                    font-size: 15px;
+                    font-weight: 400;
+                    border: 0;
+                    padding: 7px 20px;
+                    border-radius: 4px 0 0 4px;
+                    text-transform: capitalize;
+                    margin: 0;
+                    &:last-child{
+                        border-radius: 0px 4px 4px 0;
+                    }
+                    &.active {
+                        color: var(--white);
+                        background: var(--main-color-one);
+                        border: 0;
+                    
+                    }
+                    &:hover {
+                        border: 0;
+                    }
+                }
+            }
+        }
+    }
+    // Tabs Button Style Five
+    &.style_five {
+        .nav-tabs {
+            margin-bottom: 30px;
+            padding-bottom: 0px;
+            // justify-content: center;
+            flex-wrap: wrap;
+            border: 0;
+            gap: 10px 0;
+            .nav-item {
+                display: block;
+            }
+            .nav-link {
+                color: var(--heading-color-two);
+                background: var(--section-bg-3);
+                font-size: 15px;
+                font-weight: 400;
+                border-radius: 0;
+                display: block;
+                padding: 7px 20px;
+                text-align: center;
+                text-align: center;
+                border-right: 1px solid var(--main-color-one);
+                &:last-child{
+                    border-right: 0;
+                }
+                &.active {
+                    color: var(--white-text);
+                    background: var(--main-color-one);
+                    position: relative;
+                }
+            }
+        }
+    }
+    // Tabs Button Style Six
+    &.style_six {
+        .nav-tabs {
+            margin-bottom: 30px;
+            padding-bottom: 0px;
+            border: 0;
+            gap: 10px;
+            .nav-item {
+                display: block;
+            }
+            .nav-link {
+                position: relative;
+                padding: 7px 20px;
+                border: 1px solid var(--border-color);
+                color: var(--heading-color-two);
+                font-size: 15px;
+                font-weight: 400;
+                display: block;
+                text-align: center;
+                &:first-child{
+                    margin-left: 0px;
+                }
+                &::after {
+                    @include transition(.2s);
+                    background: var(--main-color-one);
+                    position: absolute;
+                    height: 10px;
+                    width: 10px;;
+                    content: "";
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    bottom: -6px;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                &.active {
+                    color: var(--white);
+                    background: var(--main-color-one);
+                    border-color: transparent ;
+                    &::after {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+    // Tabs Button Style Seven
+    &.style_seven {
+        display: flex;
+        align-items: flex-start;
+        gap: 24px 20px;
+        nav {
+            padding-bottom: 0px;
+            position: relative;
+            margin-bottom: 0;
+            .nav-tabs {
+                flex-direction: column;
+                border: 0;
+                gap: 12px;
+                .nav-link {
+                    @include flexbox();
+                    @include justify-content(space-between);
+                    @include align-items(center);
+                    // display: flex;
+                    // align-items: center;
+                    // justify-content: space-between;
+                    color: var(--heading-color-two);
+                    background: var(--section-bg-1);
+                    font-size: 15px;
+                    font-weight: 400;
+                    border: 0;
+                    border-radius: 4px;
+                    display: block;
+                    padding: 7px 20px;
+                    text-align: center;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    &.active {
+                        background: var(--main-color-one);
+                        color: $white;
+                    
+                    }
+                }
+            }
+        }
+    }
+   // Tabs Button Style Eight
+    &.style_eight {
+        nav {
+            .nav-tabs{
+                margin-bottom: 30px;
+                padding-bottom: 0px;
+                position: relative;
+                border: 0;
+                gap: 10px 0;
+                .nav-link {
+                    position: relative;
+                    padding: 9px 29px;
+                    border: 0;
+                    color: var(--heading-color-two);
+                    background: var(--section-bg-1);
+                    border-radius: var(--radius-three);
+                    font-size: 15px;
+                    font-weight: 400;
+                    display: block;
+                    padding: 7px 20px;
+                    text-align: center;
+                    text-align: center;
+                    &::after {
+                        position: absolute;
+                        height: 15px;
+                        width: 15px;
+                        background: var(--main-color-one);
+                        position: absolute;
+                        height: 10px;
+                        width: 10px;
+                        content: "";
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        bottom: -5px;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    &.active {
+                        background: var(--main-color-one);
+                        color: #fff;
+                        @include transition(.0s);
+                        &:after {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Tabs Button Style Nine
+    &.style_nine {
+        .nav-tabs {
+            margin-bottom: 30px;
+            padding-bottom: 0px;
+            border: 0;
+            gap: 10px;
+            .nav-item {
+                display: block;
+            }
+            .nav-link {
+                @include transition(.1s);
+                text-align: center;
+                min-width: 100px;
+                color: var(--heading-color-two);
+                background: var(--section-bg-3);
+                font-size: 15px;
+                font-weight: 400;
+                border: 0;
+                display: block;
+                padding: 7px 20px;
+                text-align: center;                
+                i {
+                    color: var(--paragraph-color-one);
+                    font-size: 31px;
+                    margin-bottom: 5px;
+                }
+                h6 {
+                    color: var(--heading-color-two);
+                    text-transform: capitalize;
+                    font-size: 15px;
+                    font-weight: 400;
+                    margin: 0;
+                    margin-top: 0px;
+                }
+                &.active {
+                    color: var(--white-text);
+                    background:var(--main-color-one);
+                    border-color: transparent;
+                    &::after {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                    i {
+                        color: var(--white);
+                    }
+                    h6 {
+                        color: var(--white-text);
+                    }
+                    img.block-img {
+                        opacity: 1 ;
+                        visibility: visible ;
+                    }
+                    .active-img {
+                        opacity: 1 !important;
+                        visibility: visible !important;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+    // Tabs Button Style Ten
+    &.style_ten {
+        .nav-tabs {
+            margin-bottom: 30px;
+            padding-bottom: 0px;
+            gap: 10px;
+            border: 0;
+            .nav-item {
+                display: block;
+            }
+            .nav-link {
+                @include transition(.1s);
+                text-align: center;
+                min-width: 100px;
+                color: var(--heading-color-two);
+                background: none;
+                border: 1px solid var(--border-color);
+                font-size: 15px;
+                font-weight: 400;
+                display: block;
+                padding: 7px 20px;
+                text-align: center;                
+                i {
+                    color: var(--paragraph-color-one);
+                    font-size: 31px;
+                    margin-bottom: 5px;
+                }
+                h6 {
+                    color: var(--heading-color-two);
+                    text-transform: capitalize;
+                    font-size: 15px;
+                    font-weight: 400;
+                    margin: 0;
+                    margin-top: 0px;
+                }
+                &.active {
+                    color: var(--white-text);
+                    background:var(--main-color-one);
+                    &::after {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                    i{
+                        color: var(--white);
+                    }
+                    h6{
+                        color: #fff;
+                    }
+                    img.block-img {
+                        opacity: 1 ;
+                        visibility: visible ;
+                    }
+                    .active-img {
+                        opacity: 1 !important;
+                        visibility: visible !important;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+

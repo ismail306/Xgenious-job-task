@@ -1,0 +1,55 @@
+
+//== Abstract page
+@import "global/mixins";
+@import "global/variables";
+@import "global/global";
+@import "global/global_idea";
+@import "global/customColumn";
+
+// Elements page
+@import "elements/select2";
+@import "elements/form";
+@import "elements/single_photoupload";
+@import "elements/tabs";
+@import "elements/button";
+@import "elements/custom_switch";
+@import "elements/table";
+@import "elements/quantity";
+@import "elements/checkbox";
+@import "elements/pagination";
+@import "elements/componentCard";
+@import "elements/custom_modal";
+
+// Section page
+@import "pages/sidebar";
+@import "pages/dashboard_header";
+@import "pages/eCommerce";
+@import "pages/recent_activities";
+@import "pages/pos";
+@import "pages/branches";
+@import "pages/inventory";
+@import "pages/orders";
+@import "pages/icon_style";
+@import "pages/accordion";
+@import "pages/tab";
+@import "pages/alert";
+@import "pages/badge";
+@import "pages/buttonComponent";
+@import "pages/modal";
+@import "pages/media_object";
+@import "pages/carousel";
+@import "pages/dropdown";
+@import "pages/popovers";
+@import "pages/tooltip";
+@import "pages/pagination";
+@import "pages/addNew_product";
+@import "pages/table";
+@import "pages/data_table";
+@import "pages/login-registration";
+@import "pages/slick";
+@import "pages/chat_inbox";
+@import "pages/invoice";
+@import "pages/customer_details";
+@import "pages/inboxes";
+
+

@@ -1,0 +1,793 @@
+/* Tooltip Css */
+// .tooltip_wrapper {
+//     &.style_one {
+//         .btn-primary {
+//             &[data-bs-toggle^=tooltip] {
+//                 background-color: var(--primary);
+//                 border-color: var(--primary);
+//             }
+//         }
+//         .btn-secondary {
+//             &[data-bs-toggle^=tooltip] {
+//                 background-color: var(--secondary);
+//                 border-color: var(--secondary);
+//             }
+//         }
+//         .btn-success {
+//             &[data-bs-toggle^=tooltip] {
+//                 background-color: var(--success);
+//                 border-color: var(--success);
+//             }
+//         }
+//         .btn-danger {
+//             &[data-bs-toggle^=tooltip] {
+//                 background-color: var(--danger);
+//                 border-color: var(--danger);
+//             }
+//         }
+//         .btn-info {
+//             &[data-bs-toggle^=tooltip] {
+//                 background-color: var(--info);
+//                 border-color: var(--info);
+//                 color: var(--white-text);
+//             }
+//         }
+//         .btn-dark {
+//             &[data-bs-toggle^=tooltip] {
+//                 background-color: var(--dark);
+//                 border-color: var(--dark);
+//             }
+//         }
+//         .btn-light {
+//             &[data-bs-toggle^=tooltip] {
+//                 background-color: var(--light);
+//                 border-color: var(--light);
+//             }
+//         }
+//         .btn-blue {
+//             &[data-bs-toggle^=tooltip] {
+//                 background-color: var(--blue);
+//                 border-color: var(--blue);
+//                 color: var(--white-text);
+//             }
+//         }
+//         .btn-purple {
+//             &[data-bs-toggle^=tooltip] {
+//                 background-color: var(--purple);
+//                 border-color: var(--purple);
+//                 color: var(--white-text);
+//             }
+//         }
+//         .btn-orange {
+//             &[data-bs-toggle^=tooltip] {
+//                 background-color: var(--orange);
+//                 border-color: var(--orange);
+//                 color: var(--white-text);
+//             }
+//         }
+//         .btn-brown {
+//             &[data-bs-toggle^=tooltip] {
+//                 background-color: var(--brown);
+//                 border-color: var(--brown);
+//                 color: var(--white-text);
+//             }
+//         }
+//         .btn-green {
+//             &[data-bs-toggle^=tooltip] {
+//                 background-color: var(--green);
+//                 border-color: var(--green);
+//                 color: var(--white-text);
+//             }
+//         }
+//         .btn-sky {
+//             &[data-bs-toggle^=tooltip] {
+//                 background-color: var(--sky);
+//                 border-color: var(--sky);
+//                 color: var(--white-text);
+//             }
+//         }
+//         .btn-pink {
+//             &[data-bs-toggle^=tooltip] {
+//                 background-color: var(--pink);
+//                 border-color: var(--pink);
+//                 color: var(--white-text);
+//             }
+//         }
+
+//     }
+// }
+
+
+.btn-primary {
+    &[data-bs-toggle^=tooltip] {
+        background-color: var(--primary);
+        border-color: var(--primary);
+    }
+}
+.btn-secondary {
+    &[data-bs-toggle^=tooltip] {
+        background-color: var(--secondary);
+        border-color: var(--secondary);
+    }
+}
+.btn-success {
+    &[data-bs-toggle^=tooltip] {
+        background-color: var(--success);
+        border-color: var(--success);
+    }
+}
+.btn-danger {
+    &[data-bs-toggle^=tooltip] {
+        background-color: var(--danger);
+        border-color: var(--danger);
+    }
+}
+.btn-info {
+    &[data-bs-toggle^=tooltip] {
+        background-color: var(--info);
+        border-color: var(--info);
+        color: var(--white-text);
+    }
+}
+.btn-dark {
+    &[data-bs-toggle^=tooltip] {
+        background-color: var(--dark);
+        border-color: var(--dark);
+    }
+}
+.btn-light {
+    &[data-bs-toggle^=tooltip] {
+        background-color: var(--light);
+        border-color: var(--light);
+    }
+}
+.btn-blue {
+    &[data-bs-toggle^=tooltip] {
+        background-color: var(--blue);
+        border-color: var(--blue);
+        color: var(--white-text);
+    }
+}
+.btn-purple {
+    &[data-bs-toggle^=tooltip] {
+        background-color: var(--purple);
+        border-color: var(--purple);
+        color: var(--white-text);
+    }
+}
+.btn-orange {
+    &[data-bs-toggle^=tooltip] {
+        background-color: var(--orange);
+        border-color: var(--orange);
+        color: var(--white-text);
+    }
+}
+.btn-brown {
+    &[data-bs-toggle^=tooltip] {
+        background-color: var(--brown);
+        border-color: var(--brown);
+        color: var(--white-text);
+    }
+}
+.btn-green {
+    &[data-bs-toggle^=tooltip] {
+        background-color: var(--green);
+        border-color: var(--green);
+        color: var(--white-text);
+    }
+}
+.btn-sky {
+    &[data-bs-toggle^=tooltip] {
+        background-color: var(--sky);
+        border-color: var(--sky);
+        color: var(--white-text);
+    }
+}
+.btn-pink {
+    &[data-bs-toggle^=tooltip] {
+        background-color: var(--pink);
+        border-color: var(--pink);
+        color: var(--white-text);
+    }
+}
+
+// tooltip Custom classes
+.tooltip-primary {
+    --bs-tooltip-bg: var(--primary);
+}
+.tooltip-secondary {
+    --bs-tooltip-bg: var(--secondary);
+}
+.tooltip-success {
+    --bs-tooltip-bg: var(--success);
+}
+.tooltip-danger {
+    --bs-tooltip-bg: var(--danger);
+} 
+.tooltip-light {
+    --bs-tooltip-bg: var(--light);
+    --bs-tooltip-color: var(--dark);
+} 
+.tooltip-dark {
+    --bs-tooltip-bg: var(--dark);
+} 
+.tooltip-info {
+    --bs-tooltip-bg: var(--info);
+} 
+.tooltip-blue {
+    --bs-tooltip-bg: var(--blue);
+} 
+.tooltip-purple {
+    --bs-tooltip-bg: var(--purple);
+} 
+.tooltip-orange {
+    --bs-tooltip-bg: var(--orange);
+} 
+.tooltip-brown {
+    --bs-tooltip-bg: var(--brown);
+} 
+.tooltip-green {
+    --bs-tooltip-bg: var(--green);
+} 
+.tooltip-sky {
+    --bs-tooltip-bg: var(--sky);
+} 
+.tooltip-pink {
+    --bs-tooltip-bg: var(--pink);
+} 
+.tooltip-warning {
+    --bs-tooltip-bg: var(--warning);
+} 
+.tooltip-main {
+    --bs-tooltip-bg: var(--main-color-one);
+} 
+
+.tooltip-wrapper {
+    &.style-one {
+        .tooltip {
+            .tooltip-inner {
+                background-color: var(--main-color-one);
+            }
+            &.bs-tooltip-top {
+                .tooltip-arrow {
+                    &::before {
+                        border-top-color: var(--main-color-one);
+                    }
+                }
+            }
+            &.bs-tooltip-bottom {
+                .tooltip-arrow {
+                    &::before {
+                        border-bottom-color: var(--main-color-one);
+                    }
+                }
+            }
+            &.bs-tooltip-start {
+                .tooltip-arrow {
+                    &::before {
+                        border-left-color: var(--main-color-one);
+                    }
+                }
+            }
+            &.bs-tooltip-end {
+                .tooltip-arrow {
+                    &::before {
+                        border-right-color: var(--main-color-one);
+                    }
+                }
+            }
+        }
+        .btn-secondary {
+            .tooltip {
+                .tooltip-inner {
+                    background-color: var(--secondary);
+                }
+                &.bs-tooltip-top {
+                    .tooltip-arrow {
+                        &::before {
+                            border-top-color: var(--secondary);
+                        }
+                    }
+                }
+                &.bs-tooltip-bottom {
+                    .tooltip-arrow {
+                        &::before {
+                            border-bottom-color: var(--secondary);
+                        }
+                    }
+                }
+                &.bs-tooltip-start {
+                    .tooltip-arrow {
+                        &::before {
+                            border-left-color: var(--secondary);
+                        }
+                    }
+                }
+                &.bs-tooltip-end {
+                    .tooltip-arrow {
+                        &::before {
+                            border-right-color: var(--secondary);
+                        }
+                    }
+                }
+            }
+        }
+        .btn-success {
+            .tooltip {
+                .tooltip-inner {
+                    background-color: var(--success);
+                }
+                &.bs-tooltip-top {
+                    .tooltip-arrow {
+                        &::before {
+                            border-top-color: var(--success);
+                        }
+                    }
+                }
+                &.bs-tooltip-bottom {
+                    .tooltip-arrow {
+                        &::before {
+                            border-bottom-color: var(--success);
+                        }
+                    }
+                }
+                &.bs-tooltip-start {
+                    .tooltip-arrow {
+                        &::before {
+                            border-left-color: var(--success);
+                        }
+                    }
+                }
+                &.bs-tooltip-end {
+                    .tooltip-arrow {
+                        &::before {
+                            border-right-color: var(--success);
+                        }
+                    }
+                }
+            }
+        }
+        .btn-danger {
+            .tooltip {
+                .tooltip-inner {
+                    background-color: var(--danger-color);
+                }
+                &.bs-tooltip-top {
+                    .tooltip-arrow {
+                        &::before {
+                            border-top-color: var(--danger-color);
+                        }
+                    }
+                }
+                &.bs-tooltip-bottom {
+                    .tooltip-arrow {
+                        &::before {
+                            border-bottom-color: var(--danger-color);
+                        }
+                    }
+                }
+                &.bs-tooltip-start {
+                    .tooltip-arrow {
+                        &::before {
+                            border-left-color: var(--danger-color);
+                        }
+                    }
+                }
+                &.bs-tooltip-end {
+                    .tooltip-arrow {
+                        &::before {
+                            border-right-color: var(--danger-color);
+                        }
+                    }
+                }
+            }
+        }
+        .btn-dark {
+            .tooltip {
+                .tooltip-inner {
+                    background-color: var(--dark-color);
+                }
+                &.bs-tooltip-top {
+                    .tooltip-arrow {
+                        &::before {
+                            border-top-color: var(--dark-color);
+                        }
+                    }
+                }
+                &.bs-tooltip-bottom {
+                    .tooltip-arrow {
+                        &::before {
+                            border-bottom-color: var(--dark-color);
+                        }
+                    }
+                }
+                &.bs-tooltip-start {
+                    .tooltip-arrow {
+                        &::before {
+                            border-left-color: var(--dark-color);
+                        }
+                    }
+                }
+                &.bs-tooltip-end {
+                    .tooltip-arrow {
+                        &::before {
+                            border-right-color: var(--dark-color);
+                        }
+                    }
+                }
+            }
+        }
+        .btn-light {
+            .tooltip {
+                .tooltip-inner {
+                    background-color: var(--light-color);
+                }
+                &.bs-tooltip-top {
+                    .tooltip-arrow {
+                        &::before {
+                            border-top-color: var(--light-color);
+                        }
+                    }
+                }
+                &.bs-tooltip-bottom {
+                    .tooltip-arrow {
+                        &::before {
+                            border-bottom-color: var(--light-color);
+                        }
+                    }
+                }
+                &.bs-tooltip-start {
+                    .tooltip-arrow {
+                        &::before {
+                            border-left-color: var(--light-color);
+                        }
+                    }
+                }
+                &.bs-tooltip-end {
+                    .tooltip-arrow {
+                        &::before {
+                            border-right-color: var(--light-color);
+                        }
+                    }
+                }
+            }
+        }
+        .btn-info {
+            .tooltip {
+                .tooltip-inner {
+                    background-color: var(--info);
+                }
+                &.bs-tooltip-top {
+                    .tooltip-arrow {
+                        &::before {
+                            border-top-color: var(--info);
+                        }
+                    }
+                }
+                &.bs-tooltip-bottom {
+                    .tooltip-arrow {
+                        &::before {
+                            border-bottom-color: var(--info);
+                        }
+                    }
+                }
+                &.bs-tooltip-start {
+                    .tooltip-arrow {
+                        &::before {
+                            border-left-color: var(--info);
+                        }
+                    }
+                }
+                &.bs-tooltip-end {
+                    .tooltip-arrow {
+                        &::before {
+                            border-right-color: var(--info);
+                        }
+                    }
+                }
+            }
+        }
+        .btn-warning {
+            .tooltip {
+                .tooltip-inner {
+                    background-color: var(--warning);
+                    color: var(--dark-color);
+                }
+                &.bs-tooltip-top {
+                    .tooltip-arrow {
+                        &::before {
+                            border-top-color: var(--warning);
+                        }
+                    }
+                }
+                &.bs-tooltip-bottom {
+                    .tooltip-arrow {
+                        &::before {
+                            border-bottom-color: var(--warning);
+                        }
+                    }
+                }
+                &.bs-tooltip-start {
+                    .tooltip-arrow {
+                        &::before {
+                            border-left-color: var(--warning);
+                        }
+                    }
+                }
+                &.bs-tooltip-end {
+                    .tooltip-arrow {
+                        &::before {
+                            border-right-color: var(--warning);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.style-two {
+        .tooltip {
+            border: 1px solid var(--main-color-one);
+            .tooltip-header {
+                border-color: var(--main-color-one);
+                background-color: rgba(var(--main-color-one-rgb), .1);
+                color: var(--main-color-one);
+            }
+            &.bs-tooltip-top {
+                .tooltip-arrow {
+                    &::before {
+                        border-top-color: var(--main-color-one);
+                    }
+                }
+            }
+            &.bs-tooltip-bottom {
+                .tooltip-arrow {
+                    &::before {
+                        border-bottom-color: var(--main-color-one);
+                    }
+                }
+            }
+            &.bs-tooltip-start {
+                .tooltip-arrow {
+                    &::before {
+                        border-left-color: var(--main-color-one);
+                    }
+                }
+            }
+            &.bs-tooltip-end {
+                .tooltip-arrow {
+                    &::before {
+                        border-right-color: var(--main-color-one);
+                    }
+                }
+            }
+        }
+        .btn-secondary {
+            .tooltip {
+                border: 1px solid var(--secondary);
+                .tooltip-header {
+                    border-color: var(--secondary);
+                    background-color: rgba(var(--secondary-rgb), .1);
+                    color: var(--secondary);
+                }
+                &.bs-tooltip-top {
+                    .tooltip-arrow {
+                        &::before {
+                            border-top-color: var(--secondary);
+                        }
+                    }
+                }
+                &.bs-tooltip-bottom {
+                    .tooltip-arrow {
+                        &::before {
+                            border-bottom-color: var(--secondary);
+                        }
+                    }
+                }
+                &.bs-tooltip-start {
+                    .tooltip-arrow {
+                        &::before {
+                            border-left-color: var(--secondary);
+                        }
+                    }
+                }
+                &.bs-tooltip-end {
+                    .tooltip-arrow {
+                        &::before {
+                            border-right-color: var(--secondary);
+                        }
+                    }
+                }
+            }
+        }
+        .btn-success {
+            .tooltip {
+                border: 1px solid var(--success);
+                .tooltip-header {
+                    border-color: var(--success);
+                    background-color: rgba(var(--success-rgb), .1);
+                    color: var(--success);
+                }
+                &.bs-tooltip-top {
+                    .tooltip-arrow {
+                        &::before {
+                            border-top-color: var(--success);
+                        }
+                    }
+                }
+                &.bs-tooltip-bottom {
+                    .tooltip-arrow {
+                        &::before {
+                            border-bottom-color: var(--success);
+                        }
+                    }
+                }
+                &.bs-tooltip-start {
+                    .tooltip-arrow {
+                        &::before {
+                            border-left-color: var(--success);
+                        }
+                    }
+                }
+                &.bs-tooltip-end {
+                    .tooltip-arrow {
+                        &::before {
+                            border-right-color: var(--success);
+                        }
+                    }
+                }
+            }
+        }
+        .btn-danger {
+            .tooltip {
+                border: 1px solid var(--danger-color);
+                .tooltip-header {
+                    border-color: var(--danger-color);
+                    background-color: rgba(var(--danger-color-rgb), .1);
+                    color: var(--danger-color);
+                }
+                &.bs-tooltip-top {
+                    .tooltip-arrow {
+                        &::before {
+                            border-top-color: var(--danger-color);
+                        }
+                    }
+                }
+                &.bs-tooltip-bottom {
+                    .tooltip-arrow {
+                        &::before {
+                            border-bottom-color: var(--danger-color);
+                        }
+                    }
+                }
+                &.bs-tooltip-start {
+                    .tooltip-arrow {
+                        &::before {
+                            border-left-color: var(--danger-color);
+                        }
+                    }
+                }
+                &.bs-tooltip-end {
+                    .tooltip-arrow {
+                        &::before {
+                            border-right-color: var(--danger-color);
+                        }
+                    }
+                }
+            }
+        }
+        .btn-dark {
+            .tooltip {
+                border: 1px solid var(--dark-color);
+                .tooltip-header {
+                    border-color: var(--dark-color);
+                    background-color: rgba(var(--dark-color-rgb), .1);
+                    color: var(--dark-color);
+                }
+                &.bs-tooltip-top {
+                    .tooltip-arrow {
+                        &::before {
+                            border-top-color: var(--dark-color);
+                        }
+                    }
+                }
+                &.bs-tooltip-bottom {
+                    .tooltip-arrow {
+                        &::before {
+                            border-bottom-color: var(--dark-color);
+                        }
+                    }
+                }
+                &.bs-tooltip-start {
+                    .tooltip-arrow {
+                        &::before {
+                            border-left-color: var(--dark-color);
+                        }
+                    }
+                }
+                &.bs-tooltip-end {
+                    .tooltip-arrow {
+                        &::before {
+                            border-right-color: var(--dark-color);
+                        }
+                    }
+                }
+            }
+        }
+        .btn-light {
+            .tooltip {
+                border: 1px solid var(--light-color);
+                .tooltip-header {
+                    border-color: var(--light-color);
+                    background-color: rgba(var(--light-color-rgb), .1);
+                    color: var(--light-color);
+                }
+                &.bs-tooltip-top {
+                    .tooltip-arrow {
+                        &::before {
+                            border-top-color: var(--light-color);
+                        }
+                    }
+                }
+                &.bs-tooltip-bottom {
+                    .tooltip-arrow {
+                        &::before {
+                            border-bottom-color: var(--light-color);
+                        }
+                    }
+                }
+                &.bs-tooltip-start {
+                    .tooltip-arrow {
+                        &::before {
+                            border-left-color: var(--light-color);
+                        }
+                    }
+                }
+                &.bs-tooltip-end {
+                    .tooltip-arrow {
+                        &::before {
+                            border-right-color: var(--light-color);
+                        }
+                    }
+                }
+            }
+        }
+        .btn-info {
+            .tooltip {
+                border: 1px solid var(--info);
+                .tooltip-header {
+                    border-color: var(--info);
+                    background-color: rgba(var(--info-rgb), .1);
+                    color: var(--info);
+                }
+                &.bs-tooltip-top {
+                    .tooltip-arrow {
+                        &::before {
+                            border-top-color: var(--info);
+                        }
+                    }
+                }
+                &.bs-tooltip-bottom {
+                    .tooltip-arrow {
+                        &::before {
+                            border-bottom-color: var(--info);
+                        }
+                    }
+                }
+                &.bs-tooltip-start {
+                    .tooltip-arrow {
+                        &::before {
+                            border-left-color: var(--info);
+                        }
+                    }
+                }
+                &.bs-tooltip-end {
+                    .tooltip-arrow {
+                        &::before {
+                            border-right-color: var(--info);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,256 @@
+// Invoice css
+
+.invoice_wrapper {
+    .invoice_productTable {
+        th {
+            border-bottom: 1px solid var(--border-color);
+        }
+        td {
+            padding: 5px 0;
+            border-bottom: 1px solid var(--border-color);
+            &.price,
+            .price {
+                font-weight: 500;
+                color: var(--paragraph-color);
+                strong {
+                    font-weight: 700;
+                    color: var(--heading-color);
+                }
+            }
+        }
+    }
+    .invoice_productSubtotal {
+        tr {
+            td {
+                font-size: 14px;  
+                color: var(--paragraph-color); 
+                line-height: 20px; 
+                vertical-align: middle; 
+                text-align: right;
+                &:last-child {
+                    text-align: right;
+                }
+            }
+        }
+    }
+    th {
+        font-size: 14px;  
+        color: var(--heading-color); 
+        font-weight: bold; 
+        line-height: 1; 
+        vertical-align: top; 
+        padding: 0 0 7px; 
+        &:last-child {
+            text-align: right;
+        }
+    }
+    td {
+        font-size: 14px;
+        &:last-child {
+            text-align: right;
+        }
+        strong {
+            font-size: 14px;
+            color: var(--paragraph-color);
+            margin: 10px 0px;
+            display: block;
+            padding: 0;
+            &.color_heading {
+                color: var(--heading-color);
+            }
+        }
+    } 
+    &.style_two {
+        td{
+            font-size: 14px;
+            strong {
+                font-size: 14px;
+                color: var(--paragraph-color);
+                margin: 10px 0px;
+                display: block;
+                padding: 0;
+            }
+            small{
+                font-weight: 600;
+            }
+        }     
+    }
+    &.style_three {
+        th {
+            font-size: 14px;  
+            color: var(--heading-color); 
+            font-weight: bold; 
+            line-height: 1; 
+            vertical-align: top; 
+            padding: 0 0 7px; 
+            &:last-child {
+                text-align: right;
+            }
+        }
+        td {
+            font-size: 14px;
+            &:last-child {
+                text-align: right;
+            }
+            strong {
+                font-size: 14px;
+                color: var(--paragraph-color);
+                margin: 10px 0px;
+                display: block;
+                padding: 0;
+            }
+        }     
+        .billing__table {
+            &__title {
+                font-size: 16px; 
+                line-height: 20px;
+                font-weight: 700; 
+                color: var(--heading-color);
+            }
+            &__para {
+                font-size: 14px; 
+                line-height: 24px;
+                font-weight: 400; 
+                color: var(--paragraph-color);
+            }
+            tr {
+                vertical-align: top;
+                &:not(:last-child) {
+                    padding-bottom: 20px;
+                    td {
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+.billing__table {
+    &__title {
+        font-size: 16px; 
+        line-height: 20px;
+        font-weight: 700; 
+        color: var(--heading-color);
+    }
+    &__para {
+        font-size: 14px; 
+        line-height: 24px;
+        font-weight: 400; 
+        color: var(--paragraph-color);
+    }
+}
+
+.invoice_product {
+    &__thumb {
+        max-width: 30px;
+    }
+    &__para {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: var(--main-color-one);
+    }
+}
+
+.invoice_pdfContent {
+    padding-bottom: 20px;
+}
+
+// .invoice_table {
+//     height: 100%;
+// }
+
+.card-header {
+    border: 0;
+}
+
+.invoice__title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--heading-color);
+    &__medium {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+        color: var(--heading-color);
+    }
+    &__small {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        color: var(--heading-color);
+    }
+}
+
+.invoice__para {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--paragraph-color);
+}
+.invoice__logo {
+    margin-bottom: 20px;
+    display: block;
+    img {
+        width: 150px;
+    }
+}
+
+.border-bottom-0 {
+    border-bottom: 0;
+}
+// invoice 3
+.fullPadding {
+	width: 100%;
+}
+.fullTable {
+	width: 100%;
+}
+
+.ReadMsgBody { width: 100%; background-color: #ffffff; }
+.ExternalClass { width: 100%; background-color: #ffffff; }
+.visibleMobile { display: none; }
+// .hiddenMobile { display: block; }
+
+@media only screen and (max-width: 600px) {
+    table[class=fullTable] { width: 96% !important; clear: both; }
+    table[class=fullPadding] { width: 85% !important; clear: both; }
+    table[class=col] { width: 45% !important; }
+    .erase { display: none; }
+}
+
+@media only screen and (max-width: 420px) {
+    table[class=fullTable] { width: 100% !important; clear: both; }
+    table[class=fullPadding] { width: 85% !important; clear: both; }
+    table[class=col] { width: 100% !important; clear: both; }
+    table[class=col] td { text-align: left !important; }
+    .erase { display: none; font-size: 0; max-height: 0; line-height: 0; padding: 0; }
+    .visibleMobile { display: block !important; }
+    .hiddenMobile { display: none !important; }
+}
+
+.invoice_table {
+    tr {
+        th {
+            font-size: 17px;
+            font-weight: 500;
+            white-space: nowrap;
+            padding: 7px;
+            @media #{$xs} {
+                font-size: 16px;
+            }
+            @media #{$vxxs} {
+                font-size: 15px;
+            }
+        }
+        td {
+            font-size: 15px;
+            @media #{$vxxs} {
+                font-size: 14px;
+            }
+        }
+    }
+}

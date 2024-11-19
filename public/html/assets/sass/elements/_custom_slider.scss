@@ -1,0 +1,177 @@
+/* Custom Slider Css */
+
+.slider-inner-margin {
+    .slick-slide {
+        margin: 12px;
+    }
+    .slick-list {
+        margin: -12px;
+    }
+}
+
+.slider-inner-margin-10 {
+    .slick-slide {
+        margin: 5px;
+    }
+    .slick-list {
+        margin: -5px;
+    }
+}
+
+.nav-style_one {
+    position: relative;
+    .prev-icon,
+    .next-icon {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        left: -17px;
+        font-size: 20px;
+        cursor: pointer;
+        z-index: 99;
+        background: $white;
+        color: var(--new-main-color-one);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        -webkit-box-shadow: 0 0 10px rgba($black, .1);
+        box-shadow: 0 0 10px rgba($black, .1);
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        &:hover {
+            color: $white;
+            background: var(--new-main-color-one);
+        }
+        @include responsive(vxxs) {
+            left: -12px;
+        }
+    }
+    .next-icon {
+        left: auto;
+        right: -17px;
+        @include responsive(vxxs) {
+            right: -12px;
+        }
+    }
+    &.color-2 {
+        .prev-icon,
+        .next-icon {
+            color: var(--new-main-color-two);
+            &:hover {
+                background: var(--new-main-color-two);
+                color: $white;
+            }
+        }
+    }
+    &.color-3 {
+        .prev-icon,
+        .next-icon {
+            color: var(--new-main-color-three);
+            &:hover {
+                background: var(--new-main-color-three);
+                color: $white;
+            }
+        }
+    }
+}
+
+.dot-style_one {
+    &.dot-02 {
+        .slick-dots {
+            li {
+                &.slick-active {
+                    button {
+                        background: var(--new-main-color-one);
+                        width: 35px;
+                        border-radius: 2px;
+                    }
+                }
+            }
+        }
+    }
+    &.dot-color-02 {
+        .slick-dots {
+            li {
+                &.slick-active {
+                    button {
+                        background: var(--new-main-color-two);
+                    }
+                }
+            }
+        }
+    }
+    .slick-dots {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-top: 30px;
+        li {
+            &.slick-active {
+                button {
+                    background: var(--new-main-color-one);
+                }
+            }
+            button {
+                text-indent: -9999px;
+                height: 12px;
+                width: 12px;
+                background: #ddd;
+                border-radius: 50%;
+                display: block;
+                margin: 0 5px;
+                border: 0;
+                outline: none;
+                cursor: pointer;
+                -webkit-transition: all .4s;
+                -o-transition: all .4s;
+                transition: all .4s;
+            }
+        }
+    }
+}
+
+.new_testimonial__appendNav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    .prev-icon,
+    .next-icon {
+        font-size: 18px;
+        cursor: pointer;
+        z-index: 9;
+        background: $white;
+        border: 1px solid var(--new-section-bg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        @include transition(300ms);
+        border-radius: 50%;
+        background-color: var(--new-section-bg);
+        &:hover {
+            background-color: var(--new-main-color-one);
+            border-color: var(--new-main-color-one);
+            color: var(--white-text);
+        }
+    }
+}

@@ -1,0 +1,31 @@
+/* Badge Css */
+.badge {
+    &.badge_one {
+        display: inline-block;
+        padding: 0.35em 0.65em;
+        font-size: .75em;
+        font-weight: 700;
+        line-height: 1;
+        color: var(--white);
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border-radius: 0.25rem;
+        background-color: var(--heading-color-two);
+        &.badge-absolute {
+            position: absolute;
+        }
+        &.top-0 {
+            top: 0;
+        }
+        &.bottom-0 {
+            bottom: 0;
+        }
+        &.left-0 {
+            left: 0;
+        }
+        &.right-0 {
+            right: 0;
+        }
+    }
+}
