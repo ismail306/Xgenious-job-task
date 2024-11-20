@@ -26,7 +26,7 @@
                                 <tr id="stateRow_{{ $state->id }}">
                                     <td>{{ $index + 1 }}</td>
                                     <td>{{ $state->name }}</td>
-                                    <td>{{ $state->country->name }}</td> <!-- Displaying Country Name -->
+                                    <td>{{ $state->country->name }}</td> 
                                     <td class="{{ $state->status == 'active' ? 'text-success' : 'text-danger' }}">
                                         {{ ucfirst($state->status) }}
                                     </td>

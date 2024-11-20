@@ -2,63 +2,73 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\CityStoreRequest;
+use App\Interfaces\CityInterface;
+use App\Http\Requests\CityUpdateRequest;
+use App\Models\Country;
+use App\Models\City;
+
+
 
 class CityController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+
+    protected $cityRepository;
+
+    public function __construct(CityInterface $cityRepository)
+    {
+        $this->cityRepository = $cityRepository;
+    }
     public function index()
     {
-        //
+        $cities = City::whereHas('state', function ($query) {
+            $query->whereNull('deleted_at'); //where state is not soft-deleted
+        })->whereHas('state.country', function ($query) {
+            $query->whereNull('deleted_at'); 
+        })->with(['state', 'state.country'])->get();
+
+        return view('admin.cities.index', compact('cities'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
-        //
+        $countries = Country::where('status', 'active')->get();
+        return view('admin.cities.create', compact('countries'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
+    public function store(CityStoreRequest $request)
     {
-        //
+
+        $data = $request->all();
+        return $this->cityRepository->store($data);
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
+    public function show(City $city)
     {
         //
+
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
+    public function edit(City $city)
     {
-        //
+
+        $countries = Country::where('status', 'active')->get();
+        return view('admin.cities.edit', compact('countries', 'city'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
+    public function update(CityUpdateRequest $request, $city)
     {
-        //
+        $result = $this->cityRepository->update($request->all(), $city);
+        return $result;
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
+    public function destroy(City $city)
     {
-        //
+        $city->delete();
+        return response()->json([
+            'success' => true,
+            'message' => 'City deleted successfully.'
+        ]);
     }
 }

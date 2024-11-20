@@ -48,7 +48,15 @@
                     </ul>
                 </li>
                 <li class="dashboard__bottom__list__item">
-                    <a href="javascript:void(0)"><i class="material-symbols-outlined">logout</i> <span class="icon_title">Log Out</span></a>
+
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+                        <button type="submit" class=" btn dashboard__header__author__wrapper__list__item">
+                            <i class="material-symbols-outlined">logout</i> Logout
+                        </button>
+                    </form>
+
+
                 </li>
             </ul>
         </div>

@@ -22,7 +22,9 @@ class StateController extends Controller
     }
     public function index()
     {
-        $states = State::with('country')->get();
+        $states = State::whereHas('country', function ($query) {
+            $query->whereNull('deleted_at'); // where country is not soft-deleted
+        })->with('country')->get();
         return view('admin.states.index', compact('states'));
     }
 
@@ -65,5 +67,11 @@ class StateController extends Controller
             'success' => true,
             'message' => 'State deleted successfully.'
         ]);
+    }
+
+    public function statesByCountry($country_id)
+    {
+        $states = State::where('country_id', $country_id)->where('status', 'active')->get();
+        return response()->json(['states' => $states]);
     }
 }

@@ -129,7 +129,6 @@
               baseUrl = 'http://localhost/Laravel-Interview-Test-2024/public'; // Replace with your local development URL
             }
             let appendDarkCss = '<link rel="stylesheet" href="' + baseUrl + '/html/assets/css/dashboard_dark.css" id="appendCssLink">';
-            console.log(appendDarkCss)
             let head = $('head');
             let appendDarkCssId = $('#appendCssLink');
             let modeView = $('#mode_change');

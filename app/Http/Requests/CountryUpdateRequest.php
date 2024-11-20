@@ -19,9 +19,9 @@ class CountryUpdateRequest extends FormRequest
             'name' => [
                 'required',
                 'string',
-                Rule::unique('countries', 'name')->ignore($this->country), // Ensure uniqueness, ignoring the current country
+                Rule::unique('countries', 'name')->ignore($this->country), 
             ],
-            'status' => 'required|in:active,inactive', // Validate status as 'active' or 'inactive'
+            'status' => 'required|in:active,inactive',
         ];
     }
 }

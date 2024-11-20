@@ -23,6 +23,7 @@ Route::get('/dashboard', function () {
 Route::middleware('auth')->group(function () {
     Route::resource('countries', CountryController::class)->names('countries');
     Route::resource('states', StateController::class)->names('states');
+    Route::get('/get-states-by-country/{country_id}', [StateController::class, 'statesByCountry'])->name('get-states-by-country');
     Route::resource('cities', CityController::class)->names('cities');
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
